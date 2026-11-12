@@ -15,14 +15,14 @@ struct Uzsakymas {
 };
 
 void perzureti_Function (int n, const Uzsakymas uzs[]);
+void perzureti_konk_Function (int n, const Uzsakymas uzs[]);
 /*void _Function ();
-void _Function ();
 void _Function ();
 void _Function ();*/
 
     int main() {
-        int n=0, meniu=0;
-        Uzsakymas uzs[max_ilosc];
+        int n=0, m=0, meniu=0;
+        Uzsakymas uzs[max_ilosc]; string Kategorijos[max_ilosc]={};
 
         ifstream fin("uzsakymas.txt");
         ofstream fout("ataskaita.txt");
@@ -38,6 +38,11 @@ void _Function ();*/
             getline(fin, uzs[i].nazwa, ';');
             getline(fin, uzs[i].cena, ';');
             getline(fin, uzs[i].ilosc);
+
+            for (int j=0; j<m; j++) {
+
+
+            }
         }
 
 
@@ -64,22 +69,22 @@ void _Function ();*/
                 break;
             case 2:
                 cout<<"-  Perziureti pasirinktos kategorijos prekes  -"<<endl;
-
+                perzureti_konk_Function (n, uzs);
                 break;
             case 3:
                 cout<<"-  Perziureti viso uzsakymo sumas  -"<<endl;
 
                 break;
             case 4:
-                cout<<"-  Atnaujinti pazymi  -"<<endl;
+                cout<<"-  Perziureti sumas pagal kategorijas  -"<<endl;
 
                 break;
             case 5:
-                cout<<"-  Apskaiciuoti mokinio vidurkii  -"<<endl;
+                cout<<"-  Parodyti visa uzsakymo ataskaita  -"<<endl;
 
                 break;
             case 6:
-                cout<<"-  Pasalinti mokini  -"<<endl;
+                cout<<"-  Issaugoti visa ataskaita i faila  -"<<endl;
 
                 break;
             case 0:
@@ -96,7 +101,56 @@ void _Function ();*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void perzureti_Function(int n, const Uzsakymas uzs[]) {
         for (int i = 0; i < n; i++) {
-            cout << format("{}, {}, {}, {}", uzs[i].typ, uzs[i].nazwa,
-                           uzs[i].cena, uzs[i].ilosc) << endl;
+            cout << uzs[i].typ << ", "
+            << uzs[i].nazwa << ", "
+            << uzs[i].cena << ", "
+            << uzs[i].ilosc << endl;
         }
     }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void perzureti_konk_Function(int n, const Uzsakymas uzs[]) {
+string kat;
+
+        back:
+        cout << "Irasyite \n";
+        cout  << "-Dviraciai-, -Dalys- ar -Aksesuarai-\n-Baigti- kad baigti";
+        cin>>kat;
+
+        if (kat == "Dviraciai") {
+            for (int i = 0; i < n; i++) {
+                if (uzs[i].typ==kat) {
+                    cout << uzs[i].typ << ", "
+               << uzs[i].nazwa << ", "
+               << uzs[i].cena << ", "
+               << uzs[i].ilosc << endl;
+                }
+            }
+        } else  if (kat == "Dalys") {
+            for (int i = 0; i < n; i++) {
+                if (uzs[i].typ==kat) {
+                    cout << uzs[i].typ << ", "
+               << uzs[i].nazwa << ", "
+               << uzs[i].cena << ", "
+               << uzs[i].ilosc << endl;
+                }
+            }
+        } else  if (kat == "Aksesuarai") {
+            for (int i = 0; i < n; i++) {
+                if (uzs[i].typ==kat) {
+                    cout << uzs[i].typ << ", "
+               << uzs[i].nazwa << ", "
+               << uzs[i].cena << ", "
+               << uzs[i].ilosc << endl;
+                }
+            }
+        } else  if (kat == "Baigti") {
+            cout << "\n";
+            return;
+        } else  if (kat != "Dviraciai" && kat != "Dalys" && kat != "Aksesuarai" && kat!="Baigti") {
+            cout << "Nera tokios kategorijos\n\n";
+            goto back;
+        }
+
+
+    }
+
