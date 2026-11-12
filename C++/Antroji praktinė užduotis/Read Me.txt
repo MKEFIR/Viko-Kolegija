@@ -1,0 +1,3 @@
+Kai skaičiuoju pažymių skaičių, rašau vieną skaičių, nes pažymiai įvedami vėliau, o skaičiai po pirmojo bus įvedami kaip pažymiai.
+
+NEVESKITE raidžių vietoj skaičių, nes tai sukels klaidą. Aš pats nežinau, kaip tai padaryti, o dirbtinis intelektas gali tai padarys tik, bet aš to negalesiu apginti.
