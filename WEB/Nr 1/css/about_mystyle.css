@@ -1,0 +1,115 @@
+main article{
+    padding: 2rem 0;
+}main article h2{
+    padding: 2rem 0;
+    align-items: center;
+    text-align: center;
+}
+main article:nth-child(1) {
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+     box-shadow: 0 0 10px 10px var(--body-color) inset;
+}main article:nth-child(1) h2{
+color: var(--text-color-2);
+font-size: 2rem;
+font-weight: bold;
+}
+
+
+.about-box {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+gap: 1rem;
+}
+@media (max-width: 380px) {
+    .about-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+.box{
+background-color: var(--body-color);
+border: solid 2px var(--text-color-2);
+border-radius: 10px;
+padding: 1rem;
+display: grid;
+grid-template-rows: subgrid;
+grid-row: span 2;
+
+}.box h3{
+padding: 0.5rem;
+font-size: 120%;
+font-weight: 510;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-bottom: solid 1px var(--text-color-2);
+color: var(--text-color-2);
+}.box p{
+padding: 0.5rem;
+}
+
+
+
+main {
+h2 {color: var(--text-color-2);
+    font-size: 1.5rem;
+    font-weight: bold;}
+
+article:nth-child(1) {  
+    h2 {color: var(--color-b);
+    font-size: 2rem;
+font-weight: bold;}
+}}
+
+
+main article:nth-child(4) {
+    background-image: var(--labs-logo);
+    background-repeat: no-repeat;
+    background-size: 15% auto;
+    background-position: 90% 25%;
+    border-top: solid 1px var(--text-color-2);
+    color: var(--text-color);
+    position: relative;
+}
+main article:nth-child(4) h2{
+    width: 70%;
+}
+main article:nth-child(4) a{
+position: absolute;
+left: 0rem;
+bottom: 0rem;
+text-decoration: none;
+color: inherit;
+font-size: 1.3rem;
+padding: 0.3rem 0.4rem 0.4rem 0.4rem;
+text-transform: uppercase;
+border-radius: 5px;
+border-bottom: solid 1px var(--news-border-bottom);
+border-top: solid 2px var(--news-border-top);
+}
+main article:nth-child(4) a:after{
+content: " →"; 
+align-items: center;
+}main article:nth-child(4) a:hover{
+color: var(--text-color-2);
+box-shadow: 12px 12px 12px rgpa(0, 0, 0, 0.1), -10px -10px -10px white;
+border-bottom:  var(--news-border-bottom);
+border-top:  var(--news-border-top);
+}main article:nth-child(4)  a:active{
+color: var(--text-color-1);
+}
+
+/*////////////Aside////////////////////*/
+@media (max-width: 800px) {
+.labs-about {
+    visibility:hidden;       
+     position: absolute;
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   z-index: -1;
+}}

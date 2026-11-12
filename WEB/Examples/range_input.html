@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Range Input</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="range_inputstyle.css">
+</head>
+<body>
+
+<div class="image-slider">
+    <img src="../Nr 1/images/bg-contacts_dark.png" alt="After">
+    <div class="before">
+        <img src="../Nr 1/images/bg-contacts.png" alt="Before">
+    </div>
+    <input type="range">
+</div>
+
+<script>
+document.querySelectorAll('.image-slider').forEach(function (slider) {
+    var before = slider.querySelector('.before');
+    var range  = slider.querySelector('input[type="range"]');
+
+    function update() {
+        before.style.width = range.value + '%';
+    }
+
+    range.addEventListener('input', update);
+    update(); // set the initial position
+});
+</script>
+
+</body>
+</html>

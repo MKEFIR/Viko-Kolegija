@@ -1,0 +1,150 @@
+:root {/*Góra*/
+--nav-bar-color: #EFF2F7;
+--nav-menu-color: whitesmoke;
+--text-nav-bar: #2C4883;
+--nav-bar-hover:  rgb(133, 169, 223);
+--text-active: rgb(133, 169, 223);
+--color-active: rgb(228, 228, 228);
+--nav-shadov: rgba(0, 0, 0, 0.1); 
+    
+    --text-color-1: black;
+    --text-color-2: #2C4883;
+    --text-color-3: #2C4883;
+    --text-index: white;
+
+--body-color: #EFF2F7;
+--news-color: #EFF2F7;
+    --news-border-bottom: #0C1D2D;
+    --news-border-top: white;
+--aside-color: rgba(240, 248, 255, 0.5);
+--text-bright-color: #2C4883;
+--text-dark-color: whitesmoke;
+--text-dark-hover: #2C4883;
+
+/*Dól*/
+--footer-color: #0C1D2D;
+--footer-text: whitesmoke;
+--footer-text-hover: rgb(133, 169, 223);
+--footer-border: #2C4883;
+
+--color-a: rgb(133, 169, 223);
+--color-b: #2C4883;
+--table-sec: #F3F8FD;
+--border: white;
+
+--bg-contacts: url(../images/bg-contacts.png);
+--background: url(../images/Background.png);
+--tg-logo: url(../images/Terra_Group_logo.png);
+--fb-icon: url(../images/SM/facebook.png);
+--in-icon: url(../images/SM/instagram.png);
+--x-icon: url(../images/SM/logo-black.png);
+--x-icon-hover: url(../images/SM/logo-white.png);
+--lin-icon: url(../images/SM/linkedin.png);
+
+--con-domain: url(../images/contacts/domain_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mail: url(../images/contacts/mail_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-handshake: url(../images/contacts/handshake_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mic: url(../images/contacts/mic_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-location: url(../images/contacts/location_on_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-public: url(../images/contacts/public_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-schedule: url(../images/contacts/schedule_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+
+--labs-logo: url(../images/TGLabs_logo_transparent.webp);
+--about: url(../images/categories/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--gallery: url(../images/categories/image_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--contacts: url(../images/categories/contacts_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--labs: url(../images/categories/labs_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--forms: url(../images/categories/grading_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--pin: url(../images/location_on_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
+}@media (prefers-color-scheme: dark){
+:root {/*Góra*/
+--nav-bar-color: #05111B;
+--nav-menu-color: rgb(75, 75, 75);
+--text-nav-bar:#EFF2F7;
+--nav-bar-hover: #2C4883;
+--text-active: #2C4883;
+--color-active: rgb(56, 56, 56);
+--nav-shadov: rgba(255, 255, 255, 0.2);
+
+    --text-color-1: white;
+    --text-color-2: rgb(133, 169, 223);
+    --text-color-3: white;
+    --text-index: white;
+
+--body-color: #05111B;
+--news-color: #0C1D2D;
+    --news-border-bottom: #1a2d57;
+    --news-border-top: #2C4883;
+--aside-color: rgba(24, 38, 51, 0.2);
+--text-bright-color: whitesmoke;
+--text-dark-color: black;
+--text-dark-hover: #2C4883;
+
+/*Dól*/
+--footer-color: #0C1D2D;
+--footer-text: whitesmoke;
+--footer-text-hover: rgb(133, 169, 223);
+--footer-border: #2C4883;
+
+--color-a: #0C1D2D;
+--color-b: rgb(133, 169, 223);
+--table-sec: #1c2835;
+--border: rgb(156, 155, 155);
+
+--bg-contacts: url(../images/bg-contacts_dark.png);
+--background: url(../images/Background_dark.png);
+--tg-logo: url(../images/TerraGroup_logo.png);
+--fb-icon: url(../images/SM/facebook-white.png);
+--in-icon: url(../images/SM/instagram-white.png);
+--x-icon: url(../images/SM/logo-white.png);
+--x-icon-hover: url(../images/SM/logo-black.png);
+--lin-icon: url(../images/SM/linkedin-white.png);
+
+--con-domain: url(../images/contacts/dark/domain_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mail: url(../images/contacts/dark/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-handshake: url(../images/contacts/dark/handshake_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mic: url(../images/contacts/dark/mic_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-location: url(../images/contacts/dark/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-public: url(../images/contacts/dark/public_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-schedule: url(../images/contacts/dark/schedule_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+
+--labs-logo: url(../images/TGLabs_logo_transparent_dark.png);
+--about: url(../images/categories/dark/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--gallery: url(../images/categories/dark/image_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--contacts: url(../images/categories/dark/contacts_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--labs: url(../images/categories/dark/labs_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--forms: url(../images/categories/dark/grading_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--pin: url(../images/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+}}
+
+
+
+
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(page-content) {
+    animation-duration: 1s;
+}
+::view-transition-old(page-content) {
+    animation-name: slide-out;
+}
+::view-transition-new(page-content) {
+    animation-name: slide-in;
+}
+main, .maps, .category, .news {
+    view-transition-name: page-content;
+}
+
+@keyframes slide-out {
+    to {
+        translate: -100vw;
+    }
+}
+@keyframes slide-in {
+    from {
+        translate: 100vw;
+    }
+}

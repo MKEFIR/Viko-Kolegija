@@ -1,0 +1,33 @@
+/**
+ * De-emphasizing by blurring (AND dimming)
+ */
+
+main {
+  filter: blur(0);
+  transition: filter .6s ease, opacity .6s ease;
+}
+main.de-emphasized {
+  filter: blur(4px);
+  opacity: .85;
+}
+dialog {
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 1;
+	width: 10em;
+	padding: 2em;
+	margin: -5em;
+	border: 1px solid silver;
+	border-radius: .5em;
+	box-shadow: 0 .2em .5em rgba(0,0,0,.5),
+	            0 0 0 100vmax rgba(0,0,0,.2);
+}
+
+
+dialog:not([open]) {
+	display: none;
+}
+
+body {
+	font: 150%/1.6 Baskerville, Palatino, serif;
+}

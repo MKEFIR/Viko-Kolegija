@@ -1,0 +1,165 @@
+body {
+	font-family: 'Frutiger LT Std', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.6;
+	margin: 0;
+	padding: 5rem;
+}
+.common{
+	margin-bottom: 30px;	
+ul:nth-child(1) {
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 16em;
+	border: 1px solid silver;
+	padding: .3em .5em;
+	list-style: none;
+	margin-top: 30px;
+	font: 100 200%/1.6 'Frutiger LT Std', sans-serif;
+	background: linear-gradient(to right, white 15px, hsla(0,0%,100%,0)) 0 0 / 50px 100%,
+	            radial-gradient(at left, rgba(0,0,0,.2), transparent 70%) 0 0 / 15px 100%,
+	            linear-gradient(to left, white 15px, hsla(0,0%,100%,0)) right / 50px 100%,
+	            radial-gradient(at right, rgba(0,0,0,.2), transparent 70%) right / 15px 100%;
+	background-repeat: no-repeat;
+	background-attachment: local, scroll, local, scroll;
+}
+ /**
+ * Scrolling hints
+ */
+
+ul:nth-child(2)	 {
+	display: inline-block;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 7.5em;
+	height: 5em;
+	border: 1px solid silver;
+	padding: .3em .5em;
+	list-style: none;
+	margin-top: 2em;
+	font: 100 200%/1.6 'Frutiger LT Std', sans-serif;
+	background: linear-gradient(white 15px, hsla(0, 0%, 100%, 0)) 0 0 / 100% 50px,
+	            radial-gradient(at top, rgba(0,0,0,.2), transparent 70%) 0 0 / 100% 15px,
+	            linear-gradient(to top, white 15px, hsla(0, 0%, 100%, 0)) bottom / 100% 50px,
+	            radial-gradient(at bottom, rgba(0,0,0,.2), transparent 70%) bottom / 100% 15px;
+	background-repeat: no-repeat;
+	background-attachment: local, scroll, local, scroll;
+	margin-top: 30px;
+}
+
+li {
+	flex: none;
+	white-space: nowrap;
+	margin-right: 1em;
+}
+ }
+
+@property --fade-top {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 0px;
+}
+@property --fade-bottom {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 0px;
+}
+.scroller {
+	display: inline-block;
+	border: 1px solid silver;
+
+
+ul {
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 7.2em;
+	height: 7em;
+	margin: 0;
+	padding: .3em .5em;
+	list-style: none;
+	font: 100 200%/1.6 Arial, sans-serif;
+}}
+
+/* Only apply the effect in browsers that support scroll-driven animations */
+@supports (animation-timeline: scroll()) {
+
+	/* At the top: no top fade, bottom fade on.
+	   In the middle: both on.
+	   At the bottom: top fade on, no bottom fade. */
+	@keyframes scroll-fade {
+		0%   { --fade-top: 0px;  --fade-bottom: 40px; }
+		5%   { --fade-top: 40px; --fade-bottom: 40px; }
+		95%  { --fade-top: 40px; --fade-bottom: 40px; }
+		100% { --fade-top: 40px; --fade-bottom: 0px; }
+	}
+
+	.scroller ul {
+		-webkit-mask-image: linear-gradient(to bottom,
+			transparent 0, black var(--fade-top),
+			black calc(100% - var(--fade-bottom)), transparent 100%);
+		mask-image: linear-gradient(to bottom,
+			transparent 0, black var(--fade-top),
+			black calc(100% - var(--fade-bottom)), transparent 100%);
+
+		animation: scroll-fade linear both;
+		animation-timeline: scroll(self block); /* must come AFTER the animation shorthand */
+	}
+}
+
+
+@property --fade-left {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 0px;
+}
+@property --fade-right {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 0px;
+}
+.scroller-x {
+	display: inline-block;
+	margin-top: 30px;
+	border: 1px solid silver;
+
+
+ul {
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 15em;
+	margin: 0;
+	padding: .3em .5em;
+	list-style: none;
+	font: 100 200%/1.6 'Frutiger LT Std', sans-serif;
+}
+
+li {
+	flex: none;
+	white-space: nowrap;
+	margin-right: 1em;
+}}
+
+@supports (animation-timeline: scroll()) {
+
+	
+	@keyframes scroll-fade-x {
+		0%   { --fade-left: 0px;  --fade-right: 40px; }
+		5%   { --fade-left: 40px; --fade-right: 40px; }
+		95%  { --fade-left: 40px; --fade-right: 40px; }
+		100% { --fade-left: 40px; --fade-right	: 0px; }
+	}
+
+	.scroller-x ul {
+		-webkit-mask-image: linear-gradient(to right,
+			transparent 0, black var(--fade-left),
+			black calc(100% - var(--fade-right)), transparent 100%);
+		mask-image: linear-gradient(to right,
+			transparent 0, black var(--fade-left),
+			black calc(100% - var(--fade-right	)), transparent 100%);
+
+		animation: scroll-fade-x linear both;
+		animation-timeline: scroll(self block); /* must come AFTER the animation shorthand */
+	}
+}

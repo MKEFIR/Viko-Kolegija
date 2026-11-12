@@ -1,0 +1,47 @@
+body {
+    margin: 100px auto 0 auto;
+    padding: 0;
+}
+
+.image-slider {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+	width: 100vw;
+}
+
+.image-slider img {
+    display: block;
+    max-width: none;      /* keep the clipped image from shrinking */
+    user-select: none;
+	width: 100vw;
+	height: auto;
+} .image-slider div img{
+	width: 100vw;
+	height: auto;
+}
+
+.image-slider div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;     /* this is what creates the "reveal" effect */
+}
+
+.image-slider input {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    margin: 0;
+cursor: ew-resize;
+accent-color: Green; }
+.image-slider input::-webkit-slider-thumb,
+.image-slider input::-moz-range-thumb { transition: transform .15s; }
+
+.image-slider input:hover::-webkit-slider-thumb  { transform: scale(1.15); }
+.image-slider input:active::-webkit-slider-thumb { transform: scale(.9); }
+.image-slider input:hover::-moz-range-thumb      { transform: scale(1.15); }
+.image-slider input:active::-moz-range-thumb     { transform: scale(.9); }
