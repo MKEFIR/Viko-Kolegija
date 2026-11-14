@@ -1,0 +1,31 @@
+30
+Periferija;SteelSeries QcK peles kilimelis;12.00;30
+Kompiuteriai;Lenovo IdeaPad 3 15 nesiojamas;549.00;3
+Kompiuteriai;ASUS VivoBook 15 nesiojamas;599.00;2
+Kompiuteriai;HP Pavilion 14 nesiojamas;729.00;2
+Kompiuteriai;Acer Aspire 5 nesiojamas;649.00;4
+Kompiuteriai;Dell Inspiron 16 nesiojamas;899.00;1
+Kompiuteriai;MSI Thin 15 zaidimu nesiojamas;999.00;2
+Kompiuteriai;Apple MacBook Air 13 nesiojamas;1199.00;1
+Kompiuteriai;Lenovo Legion 5 zaidimu nesiojamas;1399.00;1
+Kompiuteriai;ASUS ROG Strix G16 nesiojamas;1799.00;1
+Kompiuteriai;HP Victus 16 zaidimu nesiojamas;1099.00;2
+Monitoriai;Samsung Odyssey G5 27 monitorius;249.00;6
+Monitoriai;LG UltraGear 27GN800 monitorius;279.00;4
+Monitoriai;Dell P2422H 24 monitorius;169.00;10
+Monitoriai;AOC 24G2U 24 monitorius;159.00;8
+Monitoriai;ASUS TUF VG27AQ 27 monitorius;299.00;5
+Monitoriai;BenQ GW2480 24 monitorius;139.00;12
+Monitoriai;Philips 272E1GAEZ 27 monitorius;189.00;7
+Monitoriai;MSI Optix MAG274QRF monitorius;329.00;3
+Monitoriai;Gigabyte M27Q 27 monitorius;289.00;4
+Monitoriai;LG 34WP500 34 plataus formato monitorius;269.00;2
+Periferija;Logitech MX Master 3S pele;99.00;15
+Periferija;Logitech G502 Hero zaidimu pele;45.00;20
+Periferija;Razer BlackWidow V3 klaviatura;119.00;6
+Periferija;Logitech K380 belaide klaviatura;39.00;18
+Periferija;Corsair K70 RGB mechanine klaviatura;139.00;5
+Periferija;SteelSeries Arctis Nova 5 ausines;129.00;8
+Periferija;HyperX Cloud II zaidimu ausines;89.00;11
+Periferija;Logitech C920 HD Pro internetine kamera;69.00;9
+Periferija;Razer DeathAdder Essential pele;29.00;25

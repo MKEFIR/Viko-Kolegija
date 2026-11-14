@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Treias_praktin_uduotis" targetName="Treias_praktin_uduotis" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79d20e63-7dbd-4646-8885-72881ea5d48b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../TEMP/.idea/TEMP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/Antroji praktinė užduotis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/uzsakymas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Trečias praktinė užduotis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Trečias praktinė užduotis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ataskaita.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ataskaita.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MKEFIR&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MKEFIR/Viko-Kolegija&quot;,
+    &quot;accountId&quot;: &quot;b3054346-498c-48b1-8173-f3ae66c312f0&quot;
+  }
+}</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000000668379" />
+      <entry key="MS500" value="1.0245231121534284" />
+      <entry key="S2" value="2.111587386505081" />
+      <entry key="S5" value="3.395400767123156" />
+      <entry key="S10" value="4.0951386820312585" />
+      <entry key="S30" value="4.672186489460939" />
+      <entry key="S60" value="4.832799537993612" />
+      <entry key="M2" value="4.958356669826955" />
+      <entry key="M5" value="7.15305148693119" />
+      <entry key="M10" value="17.16797547260744" />
+      <entry key="M15" value="28.12411652254713" />
+      <entry key="M30" value="51.815076720813806" />
+      <entry key="H1" value="75.12344976035223" />
+      <entry key="H2" value="92.94877778646813" />
+      <entry key="H4" value="104.34543625045558" />
+      <entry key="D1" value="115.54249691382971" />
+      <entry key="W1" value="117.64410259334416" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.018453010395791114" />
+      <entry key="MS500" value="0.46978053798999697" />
+      <entry key="S2" value="1.7634015647440862" />
+      <entry key="S5" value="3.1238074539715495" />
+      <entry key="S10" value="3.915914268273388" />
+      <entry key="S30" value="4.599365335718915" />
+      <entry key="S60" value="4.794484661693508" />
+      <entry key="M2" value="4.9386440160017955" />
+      <entry key="M5" value="7.143007431924408" />
+      <entry key="M10" value="17.158898360685114" />
+      <entry key="M15" value="28.115396513739817" />
+      <entry key="M30" value="51.80756156828718" />
+      <entry key="H1" value="75.11769813139522" />
+      <entry key="H2" value="92.94496211947296" />
+      <entry key="H4" value="104.34318910562395" />
+      <entry key="D1" value="115.54206226858045" />
+      <entry key="W1" value="117.64403882110408" />
+    </decayedShown>
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2026" />
+    <option name="minorVersion" value="3.0.1" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3M4JfiwC8hn5aLUcx9122qOamRP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.Treias_praktin_uduotis.executor": "Run",
+    "CidrDebugProfileConversion": "true",
+    "CidrDebugProfileConversion262": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Kolegija/Viko-Kolegija/C++/Trečias praktinė užduotis/main.cpp",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Treias_praktin_uduotis" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Treias_praktin_uduotis" TARGET_NAME="Treias_praktin_uduotis" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Treias_praktin_uduotis" RUN_TARGET_NAME="Treias_praktin_uduotis">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.Treias_praktin_uduotis",
+        "cmake": null
+      },
+      "second": "a58d160c-7e15-4c67-90e5-48e5481e7a5a"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.Treias_praktin_uduotis",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "a58d160c-7e15-4c67-90e5-48e5481e7a5a"
+    }
+  ],
+  "modificationCount": 8
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79d20e63-7dbd-4646-8885-72881ea5d48b" name="Changes" comment="" />
+      <created>1794604011528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1794604011528</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+    <isAutomaticBootstrapAfterUpdate value="false" />
+  </component>
+</project>
