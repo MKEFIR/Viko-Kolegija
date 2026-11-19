@@ -63,11 +63,11 @@ void isaugoti_Function (int n, int l, int ll, int lll, const Uzsakymas uzs[]);
         for (int i = 0; i < m; i++) {
             if (l<uzs[i].typ.length()) {}
             l=uzs[i].typ.length();
-        }l++;
+        }l++;if (l<10) {l=10;}
         for (int i = 0; i < n; i++) {
             if (ll<uzs[i].nazwa.length()) {}
             ll=uzs[i].nazwa.length();
-        }ll++;
+        }ll++;if (ll<6) {l=6;}
         for (int i = 0; i < n; i++) {
             if (lll<uzs[i].cena.length()) {}
             lll=uzs[i].cena.length();
@@ -100,11 +100,9 @@ void isaugoti_Function (int n, int l, int ll, int lll, const Uzsakymas uzs[]);
                 perzureti_konk_Function (n, uzs, l, ll, lll, m, Kategorijos);
                 break;
             case 3:
-                cout<<"-  Perziureti viso uzsakymo sumas  -"<<endl;
                 suma_Function (n, uzs);
                 break;
             case 4:
-                cout<<"-  Perziureti sumas pagal kategorijas  -"<<endl;
                 suma_konk_Function (n, uzs, m, Kategorijos);
                 break;
             case 5:
@@ -121,27 +119,35 @@ void isaugoti_Function (int n, int l, int ll, int lll, const Uzsakymas uzs[]);
             default:
                 cout<<"-  Tokios funkcijos nera  -"<<endl;
             goto again;     }
-        cout<<endl<<endl; goto beggining;
+         cout<<endl<<endl; goto beggining;
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void perzureti_Function(int n, const Uzsakymas uzs[], int l, int ll) {
-    int temp=l+ll+5;
+    int temp=l+ll+23;
+        cout<<"Kategorija | Prekes";
+        for (int i=0; i < ll-6; i++) {cout<<" ";}
+        cout<<" |  Kaina  | Vnt |"<<endl;
+
         for (int i = 0; i < temp; i++) {cout<<"-";}
         cout<<endl;
+
         for (int i = 0; i < n; i++) {
             cout << uzs[i].typ;
             for (int j = 0; j < l-uzs[i].typ.length(); j++) {cout<<" ";}
-            cout <<" | ";
-            cout<<uzs[i].nazwa;
+            cout <<" | "<<uzs[i].nazwa;
             for (int k = 0; k < ll-uzs[i].nazwa.length(); k++) {cout<<" ";}
-            cout<<" |"<< endl;
+            cout<<" | "<< uzs[i].cena;
+            for (int k = 0; k < 7-uzs[i].cena.length(); k++) {cout<<" ";}
+            cout<<" | "<< uzs[i].ilosc;
+            for (int k = 0; k < 3-uzs[i].ilosc.length(); k++) {cout<<" ";}
+            cout<<" |\n";
         }
 
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void perzureti_konk_Function (int n, const Uzsakymas uzs[], int l, int ll, int lll, int m, const string Kategorijos[]) {
-int kat=0;int temp=l+ll+5;
+int kat=0;
 
         back:
         cout << "Irasykite Kokia kategorija norite apozvelgti\n";
@@ -150,7 +156,13 @@ int kat=0;int temp=l+ll+5;
         }
         cout  << "0-Baigti\n";
         cin>>kat;
-        for (int i = 0; i < temp; i++) {cout<<"-";} cout<<endl;
+        int temp=l+ll+23;
+        cout<<"Kategorija | Prekes";
+        for (int i=0; i < ll-6; i++) {cout<<" ";}
+        cout<<" |  Kaina  | Vnt |"<<endl;
+
+        for (int i = 0; i < temp; i++) {cout<<"-";}
+        cout<<endl;
         if (kat == 0) { return;
         } else  if (kat < 0 || kat >= m) {
             cout << "Nera tokios kategorijos\n\n";
@@ -160,17 +172,16 @@ int kat=0;int temp=l+ll+5;
                 if (uzs[i].typ==Kategorijos[kat]) {
                     cout << uzs[i].typ;
                     for (int j = 0; j < l-uzs[i].typ.length(); j++) {cout<<" ";}
-                    cout <<" | "<< uzs[i].nazwa;
-                        for (int k = 0; k < ll-uzs[i].nazwa.length(); k++) {cout<<" ";}
-                        cout <<" | ";
-               cout<< uzs[i].cena << " | "
-               << uzs[i].ilosc<<" |"<< endl;
+                    cout <<" | "<<uzs[i].nazwa;
+                    for (int k = 0; k < ll-uzs[i].nazwa.length(); k++) {cout<<" ";}
+                    cout<<" | "<< uzs[i].cena;
+                    for (int k = 0; k < 7-uzs[i].cena.length(); k++) {cout<<" ";}
+                    cout<<" | "<< uzs[i].ilosc;
+                    for (int k = 0; k < 3-uzs[i].ilosc.length(); k++) {cout<<" ";}
+                    cout<<" |\n";
                 }
             }
-
         }
-
-
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void suma_Function (int n, const Uzsakymas uzs[]){
@@ -184,14 +195,15 @@ double suma=0, result=0;
             result += (stod(uzs[i].cena) * stod(uzs[i].ilosc));
             }
         }
-
+        cout<<"-----Viso uzsakymo sumas----"<<endl;
         if (suma-result == 0) {
-            cout <<endl<< "Suma lygu: " << suma << endl;
+            cout <<"| Moketina suma: " << suma << endl;
         } else {
-            cout <<endl<< "Suma lygu: " << suma << endl;
-            cout << "Nuakaida: " << suma-result << endl;
-            cout << "Galutine suma: " << result << endl;
+            cout <<"| Suma lygu: " << suma << endl;
+            cout <<"| Nuakaida: " << suma-result << endl;
+            cout <<"| Moketina suma: " << result << endl;
         }
+        cout <<"----------------------------";
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void suma_konk_Function (int n, const Uzsakymas uzs[], int m, const string Kategorijos[]){
@@ -218,46 +230,74 @@ int kat;
                     }else {
                         result += (stod(uzs[i].cena) * stod(uzs[i].ilosc));
         }   }   }   }
-
+        cout<<"---Kategorijos uzsakymo sumas---"<<endl;
+        cout <<"| Kategorija: "<<Kategorijos[kat]<<endl;
         if (suma-result == 0) {
-        cout <<endl<< "Suma lygu: " << suma << endl;
+        cout << "| Moketina suma: " << suma << endl;
         } else {
-        cout <<endl<< "Suma lygu: " << suma << endl;
-        cout << "Nuakaida: " << suma-result << endl;
-        cout << "Galutine suma: " << result << endl;
-    }}
+        cout << "| Suma lygu: " << suma << endl;
+        cout << "| Nuakaida: " << suma-result << endl;
+        cout << "| Moketina suma: " << result << endl;
+    }   cout <<"-------------------------------";}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void parodyti_Function(int n, int l, int ll, int lll, const Uzsakymas uzs[]) {
+
         int temp=l+ll+lll+12;
+        cout<<"Kategorija | Prekes";
+        for (int i=0; i < ll-6; i++) {cout<<" ";}
+        cout<<" |   Suma   | Noulaida | Galutine suma"<<endl;
+
         for (int i = 0; i < temp; i++) {cout<<"-";}
         cout<<endl;
+
         for (int i = 0; i < n; i++) {
+        double suma=0, result=0;
             cout << uzs[i].typ;
             for (int j = 0; j < l-uzs[i].typ.length(); j++) {cout<<" ";}
             cout <<" | "<< uzs[i].nazwa;
             for (int k = 0; k < ll-uzs[i].nazwa.length(); k++) {cout<<" ";}
             cout <<" | ";
-            cout<< uzs[i].cena;
-            for (int l = 0; l < lll-uzs[i].cena.length(); l++) {cout<<" ";}
-            cout<< " | "<< uzs[i].ilosc << endl;
-        }
-    }
 
+                    suma += (stod(uzs[i].cena) * stod(uzs[i].ilosc));
+                    if (stod(uzs[i].ilosc)>=10) {
+                        result += 0.9*(stod(uzs[i].cena) * stod(uzs[i].ilosc));
+                    }else {
+                        result += (stod(uzs[i].cena) * stod(uzs[i].ilosc));
+                    }
+            if (suma-result == 0) {
+                cout << suma << endl;
+            } else {
+                cout << suma <<" | "<<suma-result <<" | "<< result<<endl;
+            }
+
+            }
+        }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void isaugoti_Function (int n, int l, int ll, int lll, const Uzsakymas uzs[]){
-    ofstream fout("ataskaita.txt");
-        fout << fixed << setprecision(2);
-        int temp=l+ll+lll+12;
-        for (int i = 0; i < temp; i++) {fout<<"-";}
-        fout<<endl;
-        for (int i = 0; i < n; i++) {
-            fout << uzs[i].typ;
-            for (int j = 0; j < l-uzs[i].typ.length(); j++) {fout<<" ";}
-            fout <<" | "<< uzs[i].nazwa;
-            for (int k = 0; k < ll-uzs[i].nazwa.length(); k++) {fout<<" ";}
-            fout <<" | ";
-            fout<< uzs[i].cena;
-            for (int l = 0; l < lll-uzs[i].cena.length(); l++) {fout<<" ";}
-            fout<< " | "<< uzs[i].ilosc << endl;
+            ofstream fout("ataskaita.txt");
+            if (!fout.is_open()) {
+                cout << "Nepavyko atidaryti failo.\n";
+                perror("Reason");
+                return;
+            }
+
+            fout << fixed << setprecision(2);
+            int temp=l+ll+lll+12;
+            fout<<"Kategorija | Prekes"<<endl;
+            for (int i=0; i < ll-6; i++) {fout<<" ";}
+            fout<<"|";
+
+            for (int i = 0; i < temp; i++) {fout<<"-";}
+            fout<<endl;
+
+            for (int i = 0; i < n; i++) {
+                fout << uzs[i].typ;
+                for (int j = 0; j < l-uzs[i].typ.length(); j++) {fout<<" ";}
+                fout <<" | "<< uzs[i].nazwa;
+                for (int k = 0; k < ll-uzs[i].nazwa.length(); k++) {fout<<" ";}
+                fout <<" | ";
+                fout<< uzs[i].cena;
+                for (int l = 0; l < lll-uzs[i].cena.length(); l++) {fout<<" ";}
+                fout<< " | "<< uzs[i].ilosc << endl;
+            }
         }
-    }
