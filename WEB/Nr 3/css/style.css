@@ -1,0 +1,124 @@
+@import "tailwindcss"; @import "root.css";
+
+html {scroll-behavior: smooth;}
+body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset;} 
+/*Podstawowy styl do wszystkiego*/
+body::after{
+   position: absolute;
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   z-index: -1;
+   content: url(../images/facebook-color.png);
+   content: url(../images/instagram-color.png);
+   content: url(../images/logo-white.png);
+   content: url(../images/linkedin-color.png);
+
+}
+.menu-btn::before { content: "☰"; }
+nav:has(#pod-nav:popover-open) .menu-btn::before { content: "⨉"; }
+
+footer{
+   background-color: var(--footer-color);
+   color: var(--footer-text);
+   padding: 1rem 0rem 2rem 1rem;
+   bottom: 0;
+   
+} #pod-nav:popover-open {background-color: var(--body-color);}
+
+@theme inline {
+    --color-body: var(--body-color);
+    --color-base: #EFF2F7;
+    --color-base-dark: #05111B;
+}
+
+@layer components {
+    /*
+        .gallery{
+   display: grid;
+   padding: 1rem 1rem;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap: clamp(1rem, calc(2vw + 1rem) ,5rem);
+   perspective: 300px;
+}
+.gallery img{
+  width: 100%;
+}
+.gallery img{
+     object-fit: cover;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;}
+.gallery div{
+transition: ease-in-out 0.3s;
+position: relative;}
+.gallery div:hover{
+  transform: translateZ(0.5rem);
+}
+.gallery h3{
+      color: var(--text-color-2);
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 0.5rem 0;
+}
+   
+.gallery p{
+   color: var(--text-color-1);
+   font-size: 0.9rem;
+   font-weight: light;
+}@media(max-width: 800px){
+.gallery{
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+    */
+    
+
+
+}
+
+
+#img {
+       background-image: var(--tg-logo);
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+#fb {
+height: 2rem;
+width: 2rem;
+background-image: var(--fb-icon);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#fb:hover {
+background-image: url(../images/SM/facebook-color.png);}
+
+#in {
+height: 2rem;
+width: 2rem;
+background-image: var(--in-icon);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#in:hover  {
+background-image: url(../images/SM/instagram-color.png);}
+
+#x {
+height: 2rem;
+width: 2rem;
+background-image: var(--x-icon);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#x:hover {
+background-image: var(--x-icon-hover);}
+
+#lin {
+height: 2rem;
+width: 2rem;
+background-image: var(--lin-icon);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#lin:hover {
+background-image: url(../images/SM/linkedin-color.png);}

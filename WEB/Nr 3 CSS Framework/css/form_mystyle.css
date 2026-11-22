@@ -1,0 +1,84 @@
+/*////////////////////Anketa//////////////{//////*/
+form {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-bright-color);
+    width: calc(100%-1.5rem);
+    flex-grow: 1;
+}
+
+legend{
+padding: 0 0.75rem;
+}
+label {
+   width: 5rem;
+font-size: 1rem;
+text-align: left;
+
+}/*
+   width: 15rem;
+font-size: 1.1rem;
+text-align: right;
+float: left;
+padding-right: 0.5rem;
+*/
+
+input{
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+
+fieldset {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+fieldset:nth-child(4) {
+input, label {margin-left: -10px;}
+}
+fieldset:nth-child(5) {
+input {margin-left: -10px;}
+}
+/*Deklaracija*/
+fieldset:nth-child(6) input{
+    height: 3rem;
+}
+fieldset:nth-child(6) input:nth-child(2){
+    height: 1rem;
+}
+
+fieldset:nth-child(7) {
+    border: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+fieldset div {
+display: grid;
+grid-template-columns: 3rem auto;
+gap: 0.5rem 1rem;
+flex-direction: column;
+align-items: flex-start;}
+fieldset div label{
+    padding-left: 3 rem;
+    width: fit-content;}
+
+#submit-btn {
+    padding: 1rem 0;
+}
+@media (min-width: 1300px) {
+    label {
+      width: 15rem;
+font-size: 1.1rem;
+text-align: right;
+float: left;
+padding-right: 0.5rem;
+}
+}
+/*////////////////////Anketa////////////////////*/
+

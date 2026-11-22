@@ -1,0 +1,28 @@
+.contact-box {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+gap: 1rem;
+padding: 0 1rem;
+
+}
+
+
+.box{
+background-color: var(--body-color);
+border-radius: 10px;
+padding: 1rem;
+
+}.box h3{
+padding: 0.5rem;
+font-size: 120%;
+font-weight: 510;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-bottom: solid 1px var(--text-color-2);
+height: 2rem;
+color: var(--text-color-2);
+}.box p{
+padding: 0.5rem;
+}
