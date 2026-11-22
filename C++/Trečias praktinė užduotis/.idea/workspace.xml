@@ -27,10 +27,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79d20e63-7dbd-4646-8885-72881ea5d48b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Trečias praktinė užduotis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Trečias praktinė užduotis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/.idea/Antras Praktinis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antras Praktinis/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antroji praktinė užduotis/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Antroji praktinė užduotis/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Antroji praktinė užduotis/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Antroji praktinė užduotis/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMP/.idea/TEMP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/TEST.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/uzsakymas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/uzsakymas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/Antroji praktinė užduotis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trecias praktinė užduotis/uzsakymas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Trečias praktinė užduotis.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ataskaita.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ataskaita.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,23 +94,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000140797618" />
-      <entry key="MS500" value="1.0493985323408919" />
-      <entry key="S2" value="1.9272136778754847" />
-      <entry key="S5" value="3.107879014597791" />
-      <entry key="S10" value="3.8751461587293248" />
-      <entry key="S30" value="4.762449650556011" />
-      <entry key="S60" value="6.2120083355689815" />
-      <entry key="M2" value="9.4590807787399" />
-      <entry key="M5" value="14.907871486502378" />
-      <entry key="M10" value="21.022245804149907" />
-      <entry key="M15" value="27.592104292754314" />
-      <entry key="M30" value="46.81678113171406" />
-      <entry key="H1" value="80.65475762504249" />
-      <entry key="H2" value="130.84495347321425" />
-      <entry key="H4" value="182.4157997441028" />
-      <entry key="D1" value="253.97676310960387" />
-      <entry key="W1" value="270.1644090175474" />
+      <entry key="MS100" value="1.0000004735539094" />
+      <entry key="MS500" value="1.0607062029223373" />
+      <entry key="S2" value="1.7653355151975205" />
+      <entry key="S5" value="2.3504757231264684" />
+      <entry key="S10" value="2.6411076621836065" />
+      <entry key="S30" value="2.8719223584732303" />
+      <entry key="S60" value="2.9554986038010505" />
+      <entry key="M2" value="3.314725710923131" />
+      <entry key="M5" value="6.379181939007628" />
+      <entry key="M10" value="13.459324174777555" />
+      <entry key="M15" value="20.711388773120177" />
+      <entry key="M30" value="41.31660822341715" />
+      <entry key="H1" value="77.08576698454534" />
+      <entry key="H2" value="130.27199113553817" />
+      <entry key="H4" value="186.1242585700326" />
+      <entry key="D1" value="265.55790593758445" />
+      <entry key="W1" value="283.7959490585437" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -99,23 +132,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5885998809717433E-4" />
-      <entry key="MS500" value="0.1959313586243535" />
-      <entry key="S2" value="1.3238282906144194" />
-      <entry key="S5" value="2.697401609218514" />
-      <entry key="S10" value="3.618386169359066" />
-      <entry key="S30" value="4.659765595334101" />
-      <entry key="S60" value="6.1505946889435785" />
-      <entry key="M2" value="9.417823986621128" />
-      <entry key="M5" value="14.883855496339208" />
-      <entry key="M10" value="21.00418884616406" />
-      <entry key="M15" value="27.57536597175912" />
-      <entry key="M30" value="46.80201754236801" />
-      <entry key="H1" value="80.64293696432303" />
-      <entry key="H2" value="130.83638620306328" />
-      <entry key="H4" value="182.41025072881112" />
-      <entry key="D1" value="253.97554986993805" />
-      <entry key="W1" value="270.16422634991955" />
+      <entry key="MS100" value="0.014578660429580666" />
+      <entry key="MS500" value="0.46081996531159514" />
+      <entry key="S2" value="1.449506550403971" />
+      <entry key="S5" value="2.173912511265701" />
+      <entry key="S10" value="2.5401351601038678" />
+      <entry key="S30" value="2.8348687813156133" />
+      <entry key="S60" value="2.9364638544696966" />
+      <entry key="M2" value="3.304145985581782" />
+      <entry key="M5" value="6.368740864911567" />
+      <entry key="M10" value="13.446336070487154" />
+      <entry key="M15" value="20.697416010416255" />
+      <entry key="M30" value="41.30246327516393" />
+      <entry key="H1" value="77.07359348852765" />
+      <entry key="H2" value="130.2628642680181" />
+      <entry key="H4" value="186.11825020759326" />
+      <entry key="D1" value="265.55657303704345" />
+      <entry key="W1" value="283.7957478300917" />
     </decayedShown>
   </component>
   <component name="ProjectApplicationVersion">
@@ -136,6 +169,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "C/C++ File.main.cpp.executor": "Run",
+    "CMake Application.Treias_praktin_uduotis (1).executor": "Run",
     "CMake Application.Treias_praktin_uduotis.executor": "Run",
     "CidrDebugProfileConversion": "true",
     "CidrDebugProfileConversion262": "true",
@@ -167,11 +201,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Treias_praktin_uduotis" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="main.cpp" />
       <method v="2">
@@ -183,25 +212,31 @@
       <item itemvalue="CMake Application.Treias_praktin_uduotis" />
     </list>
   </component>
-  <component name="SelectedDebugProfileService">{
-  &quot;profileIdByStamp&quot;: [
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [
     {
-      &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.Treias_praktin_uduotis&quot;,
-        &quot;cmake&quot;: null
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.Treias_praktin_uduotis",
+        "cmake": null
       },
-      &quot;second&quot;: &quot;a58d160c-7e15-4c67-90e5-48e5481e7a5a&quot;
+      "second": "a58d160c-7e15-4c67-90e5-48e5481e7a5a"
     },
     {
-      &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.Treias_praktin_uduotis&quot;,
-        &quot;cmake&quot;: &quot;CMakeBuildProfile:Debug&quot;
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.Treias_praktin_uduotis (1)",
+        "cmake": "CMakeBuildProfile:Debug"
       },
-      &quot;second&quot;: &quot;a58d160c-7e15-4c67-90e5-48e5481e7a5a&quot;
+      "second": "a58d160c-7e15-4c67-90e5-48e5481e7a5a"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.main.cpp"
+      },
+      "second": "a58d160c-7e15-4c67-90e5-48e5481e7a5a"
     }
   ],
-  &quot;modificationCount&quot;: 8
-}</component>
+  "modificationCount": 17
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="79d20e63-7dbd-4646-8885-72881ea5d48b" name="Changes" comment="" />
