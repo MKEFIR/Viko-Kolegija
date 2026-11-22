@@ -1,5 +1,25 @@
-@import "tailwindcss"; @import "root.css";
+@import "tailwindcss";
 
+:root {    
+   --text-color-1: black;
+    --text-color-2: #2C4883;
+    --text-color-3: #2C4883;
+    --text-index: white;
+
+--body-color: #EFF2F7;
+--news-color: #EFF2F7;
+}
+
+@media (prefers-color-scheme: dark){
+:root {
+--text-color-1: white;
+--text-color-2: #85a9df;
+--text-color-3: white;
+--text-index: white;
+
+--body-color: #05111B;
+--news-color: #0C1D2D;
+}}
 html {scroll-behavior: smooth;}
 body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset;} 
 /*Podstawowy styl do wszystkiego*/
@@ -26,57 +46,40 @@ footer{
    
 } #pod-nav:popover-open {background-color: var(--body-color);}
 
-@theme inline {
-    --color-body: var(--body-color);
-    --color-base: #EFF2F7;
-    --color-base-dark: #05111B;
+#about {
+    font-size: 1rem;
+border: solid 0.15rem var(--text-active);
+background-color: var(--body-color);
+border-radius: 0.5rem;
+padding: 0.5rem;
+text-decoration: inherit;
+color: var(--text-color-1);
+margin: 2rem;
+transition: all 200ms;
+}#about:hover {
+border: solid 0.15rem var(--body-color);
+background-color: var(--text-active);
+color: var(--text-color-1);
+} 
+
+@theme {
+    --color-base: #EFF2F7; /* --body-color */
 }
 
 @layer components {
-    /*
-        .gallery{
-   display: grid;
-   padding: 1rem 1rem;
-   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-   gap: clamp(1rem, calc(2vw + 1rem) ,5rem);
-   perspective: 300px;
+.maps {
+   height: 20rem;
+   width: 100%;
+   background-image: url(../images/world-map-dotted-transparent.svg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1rem;
+    position: relative;
 }
-.gallery img{
-  width: 100%;
-}
-.gallery img{
-     object-fit: cover;
-  aspect-ratio: 4 / 3;
-  border-radius: 10px;}
-.gallery div{
-transition: ease-in-out 0.3s;
-position: relative;}
-.gallery div:hover{
-  transform: translateZ(0.5rem);
-}
-.gallery h3{
-      color: var(--text-color-2);
-      font-size: 1.1rem;
-      font-weight: bold;
-      padding: 0.5rem 0;
-}
-   
-.gallery p{
-   color: var(--text-color-1);
-   font-size: 0.9rem;
-   font-weight: light;
-}@media(max-width: 800px){
-.gallery{
-   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
-
-    */
-    
-
 
 }
 
-
+@layer components {
 #img {
        background-image: var(--tg-logo);
        background-repeat: no-repeat;
@@ -84,8 +87,8 @@ position: relative;}
 }
 
 #fb {
-height: 2rem;
-width: 2rem;
+height: 3rem;
+width: 3rem;
 background-image: var(--fb-icon);
 background-repeat: no-repeat;
 background-size: cover;
@@ -94,8 +97,8 @@ background-size: cover;
 background-image: url(../images/SM/facebook-color.png);}
 
 #in {
-height: 2rem;
-width: 2rem;
+height: 3rem;
+width: 3rem;
 background-image: var(--in-icon);
 background-repeat: no-repeat;
 background-size: cover;
@@ -104,8 +107,8 @@ background-size: cover;
 background-image: url(../images/SM/instagram-color.png);}
 
 #x {
-height: 2rem;
-width: 2rem;
+height: 3rem;
+width: 3rem;
 background-image: var(--x-icon);
 background-repeat: no-repeat;
 background-size: cover;
@@ -114,11 +117,32 @@ background-size: cover;
 background-image: var(--x-icon-hover);}
 
 #lin {
-height: 2rem;
-width: 2rem;
+height: 3rem;
+width: 3rem;
 background-image: var(--lin-icon);
 background-repeat: no-repeat;
 background-size: cover;
 }
 #lin:hover {
 background-image: url(../images/SM/linkedin-color.png);}
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slide-out {
+    to {
+        translate: -100vw;
+    }
+}
+@keyframes slide-in {
+    from {
+        translate: 100vw;
+    }
+}
