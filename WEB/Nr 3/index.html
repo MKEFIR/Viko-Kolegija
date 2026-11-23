@@ -10,10 +10,10 @@
   <link href="./css/output.css" rel="stylesheet">
   <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
-<body class="bg-[var(--body-color)]">
-    <header class="t-0 w-full sticky top-0 h-20 sm:h-16 flex justify-between shadow-2xl bg-[#EFF2F7] dark:bg-[#05111B] z-100">
+<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm">
+    <header class="t-0 w-full sticky top-0 h-20 lg:h-22 flex justify-between shadow-2xl bg-[var(--body-color)] z-100">
      <div class="flex justify-between w-full mx-1 md:w-fit">
-        <a href="index.html"><div id="img" class="h-12 w-40 m-3 sm:m-2" ></div></a> <!-- Logotyp -->
+        <a href="index.html"><div class="bg-[image:var(--tg-logo)] bg-cover bg-no-repeat h-12 w-40 m-2 lg:h-15 lg:w-50 xl:h-18 xl:w-60" ></div></a> <!-- Logotyp -->
       <nav class="">       
         <div class="md:hidden">   <!-- Navigacja Phone-->
           <button popovertarget="pod-nav" aria-label="Toggle menu" class="menu-btn text-3xl mt-5 mr-3"></button>
@@ -35,8 +35,8 @@
               </li>
           </ul>     
         </div>
-        <div class="hidden md:block">                                           <!-- Navigacja -->
-          <ul class="flex items-center justify-center gap-3 text-[var(--text-color-2)] text-xl font-bold mt-4
+        <div class="hidden md:block lg:ml-1">                                           <!-- Navigacja -->
+          <ul class="flex items-center justify-center gap-3 text-[var(--text-color-2)] text-xl font-bold mt-4 lg:mt-6 lg:text-2xl
                 [&>li]:hover:text-[var(--text-color-4)]">
             <li><a href="Apie/Apie.html">Apie Mus</a></li> 
             <li><a href="Galerija/Galerija.html">Galerija</a></li>
@@ -48,7 +48,7 @@
      </nav>    
     </div> 
      
-<div class="hidden lg:flex gap-3 w-fit">                                            <!-- Search -->
+<div class="hidden lg:flex gap-3 w-fit m-5  xl:mr-10">                                            <!-- Search -->
 <form id="search-form" class="hidden lg:block" action="https://www.google.com/search" method="get" target="_blank">
   <input type="search" name="q" placeholder="Ieškoti šioje svetainėje..." required >
 
@@ -56,7 +56,7 @@
 
   <button type="submit"><img src="images/search_icon.png" alt="Search"></button>
 </form>                                                                 <!-- Social Media -->
-     <div class="pod-SM">                                               
+     <div class="hidden xl:flex [&>a]:[&>div]:h-[2.5rem] [&>a]:[&>div]:w-[2.5rem] gap-3">                                               
           <a href="https://www.facebook.com" target="_blank"><div id="fb"></div></a>
            <a href="https://www.instagram.com" target="_blank"><div id="in"></div></a>
             <a href="https://www.x.com" target="_blank"><div id="x"></div></a>
@@ -69,10 +69,11 @@
     <label for="menu-toggle-dis" class="menu-icon-dis">X</label>
     <input type="checkbox" id="menu-toggle-dis"></div>-->
 
-<main class="z-1 grid grid-cols-1 [grid-template-areas:'content'_'section'] relative h-[90vh] overflow-hidden bg-[url(../images/Norvinsk.png)] bg-cover bg-no-repeat text-white"><div id="bg" class="bg-[url(images/Norvinsk.png)]"></div>
+<main>
+    <div class="z-1 grid grid-cols-1 [grid-template-areas:'content'_'section'] relative h-[90vh] overflow-hidden bg-[url(../images/Norvinsk.png)] bg-cover bg-no-repeat text-white">
     <div class="bg-[#2C4883] opacity-15 absolute w-full h-full z-1 md:"></div>   
     <content class="absolute top-0 left-5 w-[90vw] z-2">   
-        <div class="w-[75vw]"><img src="images/Terra_Group_logo_white.png" alt="Logo">
+        <div class="w-[75vw] lg:w-[50vw]"><img src="images/Terra_Group_logo_white.png" alt="Logo">
         <p class="text-xs font-bold">INTERNATIONAL RESEARCH & DEVELOPMENT CORPORATION</p>
         </div>
         <article class="mt-10">
@@ -82,29 +83,15 @@
      </article>
      
    </content>
-   <content class="hidden lg:block bottom-0 absolute">
-   <div id="bg-q"></div>
-   <blockquote>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, impedit?
-   </blockquote>
-   <blockquote>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem perferendis veritatis quae dolore error?
-   </blockquote>
-   <blockquote>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, impedit?
-   </blockquote>
-   <blockquote>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem perferendis veritatis quae dolore error?
-   </blockquote>
 </content>
    <p class="absolute border-b-2 border-b-brand bottom-5 right-5">Norvinsk, Russia</p>
-</main>
+</div>
 
-    <div class="relative bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-[30vh]
+    <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[30vh] 
      border-b-2 border-b-brand text-[var(--text-color-2)] md:bg-position-[10rem]">
-     <div class="sm:w-[80vw] md:w-[40vw]">
+     <div class="relative sm:w-[80vw] md:w-[40vw] xl:w-[20vw] text-shadow-lg md:bottom-0">
         <h2 class="text-3xl font-bold m-4">OUR GLOBAL PRESENCE </h2>
-        <p class="m-4">Over 40 major enterprises united under the TerraGroup umbrella, with branch offices and operations spanning more than 120 countries worldwide.</p>
+        <p class="m-4 font-bold ">Over 40 major enterprises united under the TerraGroup umbrella, with branch offices and operations spanning more than 120 countries worldwide.</p>
     </div></div>
                                       <!-- Section-NAV -->
    <section class="category hidden border-b-2 border-b-brand text-[#2C4883] dark:text-[#85a9df]">
@@ -119,15 +106,18 @@
                                         <!-- News -->
    <div class="news m-5">
     <h2 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h2>
-   <div class="news-scroller h-fit 
-   flex gap-[2vw] w-[80vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
-   overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity [&>div]:w-[80vw]   [&>div]:relative  [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-5
+   <div class="news-scroller
+   flex gap-[2vw] w-[82vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
+   overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity [&>div]:w-[78vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4
    [&>div]:flex [&>div]:shrink-0 [&>div]:flex-col [&>div]:gap-4
    [&>div]:[&>a]:border-b-2 [&>div]:[&>a]:border-b-brand [&>div]:[&>a]:rounded-lg [&>div]:[&>a]:w-fit [&>div]:[&>a]:p-2 [&>div]:[&>a]:bg-[var(--text-color-2)] [&>div]:[&>a]:text-[var(--news-color)] [&>div]:[&>a]:h-min
-   sm:w-[85vw][&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0
-   sm:w-[85vw]:[&>p]:text-[var(--text-color-1)]  [&>div]:[&>h3]:text-[var(--text-color-2)] [&>div]:[&>h3]:text-xl [&>div]:[&>h3]:font-bold
+   [&>div]:[&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0
+   [&>div]:[&>p]:text-[var(--text-color-1)]  [&>div]:[&>h3]:text-[var(--text-color-2)] [&>div]:[&>h3]:text-xl [&>div]:[&>h3]:font-bold
    [&>div]:[&>div]:text-xs [&>div]:[&>div]:text-[var(--text-color-2)] [&>div]:[&>div]:border-b-2
    sm:w-[85vw] sm:[&>div]:w-[40vw]
+   lg:w-[95vw] lg:[&>div]:w-[30vw]
+   xl:w-[88vw] xl:[&>div]:w-[20vw]
+   2xl:w-[95vw] 2xl:[&>div]:w-[17vw]
    ">
     <div class="news-box"><div>OFFICIAL COMMUNICATION · FEB 2016</div>
         <h3>TerraGroup Reviews Security Arrangements for Regional Personnel</h3>
@@ -176,13 +166,11 @@
 
 </div></div>
 
+    <footer class="grid grid-cols-2 gap-5 w-full justify-center lg:grid-cols-4 lg:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1">
+        <div class="hidden md:block lg:row-span-2 lg:row-start-1 lg:col-start-1"><img src="images/Terra_Group_logo_white.png" alt="Logo"></div>
 
-    <footer class="grid grid-cols-2 gap-5 w-full justify-center">
-        
-        <div class="footer-box hidden lg:block "></div>
-
-        <div class="footer-box col-span-2">
-         <ul class="grid gap-2 grid-cols-2">
+        <div class="col-span-2 lg:col-span-1 lg:row-span-2 lg:row-start-1 xl:row-span-1">
+         <ul class="grid gap-2 grid-cols-2 ">
             <li><a title="Jus eseta cia" href="index.html">Pagrindinis</a></li>
             <li><a href="Apie/Apie.html">Apie Mus</a></li>
             <li><a href="Galerija/Galerija.html">Galerija</a></li>
@@ -192,28 +180,34 @@
          </ul>
         </div>
 
-        <div class="footer-box"> 
+        <div class="lg:row-start-1 lg:w-fit"> 
             <p> TerraGroup Main Office<br>
                 London, England</p>  
             <p> info@terragroup.com</p>
             <p>+7 (000) 000-00-00</p>
         </div>
-
-        <div class="footer-box">
-            <div class="pod-SM-footer">                                               
-          <a href="https://www.facebook.com" target="_blank"><div id="fb-f"></div></a>
-           <a href="https://www.instagram.com" target="_blank"><div id="in-f"></div></a>
-            <a href="https://www.x.com" target="_blank"><div id="x-f"></div></a>
-             <a href="https://www.linkedin.com/" target="_blank"><div id="lin-f"></div></a>
-             </div>
-            <p>2026 &copy; TerraGroup International.<br>
-            All rights reserved<br></p>
-            <q id="quete">Virtus in scienta</q>
+        
+        <div class="lg:row-start-2 lg:w-fit xl:row-start-1"> 
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms of Use</a></p>
+            <p><a href="#">Sitemap</a></p>
         </div>
 
-
+        <div class="col-span-2 content-center lg:col-span-1 lg:row-span-2 lg:row-start-1 xl:row-span-1">
+            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:w-[3rem] 2xl:[&>a]:[&>div]:h-[3rem]">                                               
+          <a href="https://www.facebook.com" target="_blank"><div id="fb_w"></div></a>
+           <a href="https://www.instagram.com" target="_blank"><div id="in_w"></div></a>
+            <a href="https://www.x.com" target="_blank"><div id="x_w"></div></a>
+             <a href="https://www.linkedin.com/" target="_blank"><div id="lin_w"></div></a>
+             </div>
+             <div>  
+                <p class="text-[110%] xl:text-[100%]">2026 &copy; TerraGroup International.<br>
+                All rights reserved<br></p>
+                <q class="item-center align-center justify-center text-[#5576bd] xl:text-[120%] content-center uppercase text-shadow-(1px 1px #4261a3;)">Virtus in scienta</q>
+             </div> 
+        </div>
     </footer>
-
+</main>
 
 </body>
 </html>

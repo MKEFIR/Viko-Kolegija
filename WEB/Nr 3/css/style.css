@@ -1,25 +1,4 @@
 /* @import "tailwind.css"; */@import "root.css";
-
-:root {    
-   --text-color-1: black;
-    --text-color-2: #2C4883;
-    --text-color-3: #2C4883;
-    --text-color-4: #85a9df;
-
---body-color: #EFF2F7;
---news-color: #F3F8FD;
-}
-
-@media (prefers-color-scheme: dark){
-:root {
---text-color-1: white;
---text-color-2: #85a9df;
---text-color-3: white;
---text-color-4: #2C4883;
-
---body-color: #05111B;
---news-color: #0C1D2D;
-}}
 html {scroll-behavior: smooth;}
 body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset;} 
 /*Podstawowy styl do wszystkiego*/
@@ -75,64 +54,61 @@ color: var(--text-color-1);
 	background-repeat: no-repeat;
 	background-attachment: local, scroll, local, scroll;
 }
-
-    
-.news-box {
-    scroll-snap-align: center;
-    box-sizing: border-box;
-    padding: 20px 30px;
-    width: 20rem;
-    height: 29rem;
-    position: relative;
-    background-color: var(--news-color);
-}
 }
 
 @layer components {
-#img {
-       background-image: var(--tg-logo);
-       background-repeat: no-repeat;
-       background-size: cover;
+#central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-b);
+    width: 100%;
+    height: 5rem;
+    padding-top: 1.5rem;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 10px var(--body-color) inset;
 }
-
-#fb {
+#fb, #fb_w {
 height: 3rem;
 width: 3rem;
 background-image: var(--fb-icon);
 background-repeat: no-repeat;
 background-size: cover;
-}
-#fb:hover {
+}#fb_w {background-image: url(../images/SM/facebook-white.png);}
+#fb:hover,#fb_w:hover  {
 background-image: url(../images/SM/facebook-color.png);}
 
-#in {
+#in, #in_w {
 height: 3rem;
 width: 3rem;
 background-image: var(--in-icon);
 background-repeat: no-repeat;
 background-size: cover;
-}
-#in:hover  {
+}#in_w {background-image: url(../images/SM/instagram-white.png);}
+#in:hover,#in_w:hover   {
 background-image: url(../images/SM/instagram-color.png);}
 
-#x {
+#x, #x_w {
 height: 3rem;
 width: 3rem;
 background-image: var(--x-icon);
 background-repeat: no-repeat;
 background-size: cover;
-}
-#x:hover {
-background-image: var(--x-icon-hover);}
+}#x_w {background-image: url(../images/SM/logo-white.png);}
+#x:hover   {background-image: var(--x-icon-hover);}
+#x_w:hover {background-image: url(../images/SM/logo-black.png);}
 
-#lin {
+#lin, #lin_w {
 height: 3rem;
 width: 3rem;
 background-image: var(--lin-icon);
 background-repeat: no-repeat;
 background-size: cover;
-}
-#lin:hover {
+}#lin_w {background-image: url(../images/SM/linkedin-white.png);}
+#lin:hover,#lin_w:hover  {
 background-image: url(../images/SM/linkedin-color.png);}
 }
 
