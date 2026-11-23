@@ -1,13 +1,13 @@
-@import "tailwindcss";
+/* @import "tailwind.css"; */@import "root.css";
 
 :root {    
    --text-color-1: black;
     --text-color-2: #2C4883;
     --text-color-3: #2C4883;
-    --text-index: white;
+    --text-color-4: #85a9df;
 
 --body-color: #EFF2F7;
---news-color: #EFF2F7;
+--news-color: #F3F8FD;
 }
 
 @media (prefers-color-scheme: dark){
@@ -15,7 +15,7 @@
 --text-color-1: white;
 --text-color-2: #85a9df;
 --text-color-3: white;
---text-index: white;
+--text-color-4: #2C4883;
 
 --body-color: #05111B;
 --news-color: #0C1D2D;
@@ -67,16 +67,25 @@ color: var(--text-color-1);
 }
 
 @layer components {
-.maps {
-   height: 20rem;
-   width: 100%;
-   background-image: url(../images/world-map-dotted-transparent.svg);
-   background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 1rem;
-    position: relative;
+.news-scroller {
+    	background: linear-gradient(to right, var(--body-color) 15px, hsla(0,0%,100%,0)) 0 0 / 50px 100%,
+	            radial-gradient(at left, rgba(0,0,0,.2), transparent 70%) 0 0 / 15px 100%,
+	            linear-gradient(to left, var(--body-color) 15px, hsla(0,0%,100%,0)) right / 50px 100%,
+	            radial-gradient(at right, rgba(0,0,0,.2), transparent 70%) right / 15px 100%;
+	background-repeat: no-repeat;
+	background-attachment: local, scroll, local, scroll;
 }
 
+    
+.news-box {
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    width: 20rem;
+    height: 29rem;
+    position: relative;
+    background-color: var(--news-color);
+}
 }
 
 @layer components {
