@@ -106,7 +106,7 @@
                                         <!-- News -->
    <div class="news m-5">
     <h3 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h3>
-   <div class="news-scroller
+   <div class="news-scroller transition-colors duration-300 easy-in-out delay-300
    flex gap-[2vw] w-[82vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
    overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity [&>div]:w-[78vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4
    [&>div]:flex [&>div]:shrink-0 [&>div]:flex-col [&>div]:gap-4
@@ -166,11 +166,12 @@
 
 </div></div>
 
-    <footer class="grid grid-cols-2 gap-5 w-full justify-center lg:grid-cols-4 lg:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1 divide-x-2" divide-[var(--text-color-2)]>
-        <div class="hidden md:block lg:row-span-2 lg:row-start-1 lg:col-start-1"><img src="images/Terra_Group_logo_white.png" alt="Logo"></div>
+    <footer class="bg-[var(--footer-color)] text-[var(--footer-text)] p-3 bottom-0 grid grid-cols-2 md:grid-cols-[2fr_1fr_2fr] gap-5 xl:grid-cols-[4fr_2fr_1fr_2fr] w-full">
 
-        <div class=" lg:col-span-1 lg:row-span-2 lg:row-start-1 xl:row-span-1">
-         <ul class="grid gap-2 grid-cols-2">
+        <div class="hidden xl:block"><img src="images/Terra_Group_logo_white.png" alt="Logo" class="max-h-40"></div>
+
+        <div class="col-span-2 md:col-span-1">
+         <ul class="grid gap-2 grid-cols-2 ">
             <li><a title="Jus eseta cia" href="index.html">Pagrindinis</a></li>
             <li><a href="Apie/Apie.html">Apie Mus</a></li>
             <li><a href="Galerija/Galerija.html">Galerija</a></li>
@@ -180,20 +181,14 @@
          </ul>
         </div>
 
-        <div class="lg:row-start-1 lg:w-fit"> 
+        <div class=""> 
             <p> TerraGroup Main Office<br>
                 London, England</p>  
             <p> info@terragroup.com</p>
             <p>+7 (000) 000-00-00</p>
         </div>
-        
-        <div class="lg:row-start-2 lg:w-fit xl:row-start-1 "> 
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Terms of Use</a></p>
-            <p><a href="#">Sitemap</a></p>
-        </div>
 
-        <div class="col-span-2 content-center lg:col-span-1 lg:row-span-2 lg:row-start-1 xl:row-span-1">
+        <div class="-mt-4 -ml-1">
             <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
           <a href="https://www.facebook.com" target="_blank"><div id="fb_w"></div></a>
            <a href="https://www.instagram.com" target="_blank"><div id="in_w"></div></a>

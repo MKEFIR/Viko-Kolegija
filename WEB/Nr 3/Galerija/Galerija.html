@@ -69,9 +69,9 @@
 
 <main class="grid grid-cols-[1fr] grid-rows-[1fr_auto_auto] xl:grid-cols-[5fr_1fr] xl:grid-rows-[1fr]">
     <content>
-        <h2 id="central" class="text-2xl font-bold rounded-lg">Galerija</h2>
+        <h2 id="central" class="text-2xl pt-5 rounded-lg">Galerija</h2>
         
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(15rem,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-[clamp(1rem,calc(2vw+1rem),5rem)] p-10 perspective-[300px]
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(15rem,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(25rem,1fr))] gap-[clamp(1rem,calc(2vw+1rem),5rem)] p-10 perspective-[300px]
         [&>div]:relative [&>div]:transition [&>div]:duration-300 [&>div]:ease-in-out [&>div]:hover:translate-z-2
         [&>div]:[&>img]:aspect-[4 / 3] [&>div]:[&>img]:w-full [&>div]:[&>img]:rounded-lg [&>div]:[&>img]:object-cover
         [&>div]:[&>div]:[&>h3]:py-2 [&>div]:[&>div]:[&>h3]:text-[1.1rem] [&>div]:[&>div]:[&>h3]:font-bold [&>div]:[&>div]:[&>h3]:text-[var(--text-color-2)]
@@ -242,12 +242,13 @@
 
     </aside>
 
-    <footer class="xl:col-span-2 grid grid-cols-2 gap-5 w-full justify-center lg:grid-cols-4 lg:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1">
-        <div class="hidden md:block lg:row-span-2 lg:row-start-1 lg:col-start-1"><img src="../images/Terra_Group_logo_white.png" alt="Logo"></div>
-        
-        <div class="col-span-2 lg:col-span-1 lg:row-span-2 lg:row-start-1 xl:row-span-1 border-b-2 border-b-brand lg:border-b-0 pb-2">
+    <footer class="xl:col-span-2 bg-[var(--footer-color)] text-[var(--footer-text)] p-3 bottom-0 grid grid-cols-2 md:grid-cols-[2fr_1fr_2fr] gap-5 xl:grid-cols-[4fr_2fr_1fr_2fr] w-full">
+
+        <div class="hidden xl:block"><img src="../images/Terra_Group_logo_white.png" alt="Logo" class="max-h-40"></div>
+
+        <div class="col-span-2 md:col-span-1">
          <ul class="grid gap-2 grid-cols-2 ">
-            <li><a href="../index.html">Pagrindinis</a></li>
+            <li><a title="Jus eseta cia" href="index.html">Pagrindinis</a></li>
             <li><a href="../Apie/Apie.html">Apie Mus</a></li>
             <li><a href="../Galerija/Galerija.html">Galerija</a></li>
             <li><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
@@ -256,30 +257,24 @@
          </ul>
         </div>
 
-        <div class="lg:row-start-1 lg:w-fit flex flex-col justify-center"> 
+        <div class=""> 
             <p> TerraGroup Main Office<br>
                 London, England</p>  
             <p> info@terragroup.com</p>
             <p>+7 (000) 000-00-00</p>
         </div>
-        
-        <div class="lg:row-start-2 lg:w-fit xl:row-start-1 flex flex-col justify-center"> 
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Terms of Use</a></p>
-            <p><a href="#">Sitemap</a></p>
-        </div>
 
-        <div class="col-span-2 content-center lg:col-span-1 lg:row-span-2 lg:row-start-1 xl:row-span-1">
-            <div class="flex justify-center gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
+        <div class="-mt-4 -ml-1">
+            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
           <a href="https://www.facebook.com" target="_blank"><div id="fb_w"></div></a>
            <a href="https://www.instagram.com" target="_blank"><div id="in_w"></div></a>
             <a href="https://www.x.com" target="_blank"><div id="x_w"></div></a>
              <a href="https://www.linkedin.com/" target="_blank"><div id="lin_w"></div></a>
              </div>
-             <div class="">  
-                <p class="flex justify-center text-[110%] xl:text-[100%]">2026 &copy; TerraGroup International.<br>
+             <div>  
+                <p class="text-[110%] xl:text-[100%]">2026 &copy; TerraGroup International.<br>
                 All rights reserved<br></p>
-                <q class="flex justify-center text-[#5576bd] xl:text-[120%] content-center uppercase text-shadow-(1px 1px #4261a3;)">Virtus in scienta</q>
+                <q class="item-center align-center justify-center text-[#5576bd] xl:text-[120%] content-center uppercase text-shadow-(1px 1px #4261a3;)">Virtus in scienta</q>
              </div> 
         </div>
     </footer>
