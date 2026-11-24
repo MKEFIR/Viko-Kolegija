@@ -26,7 +26,7 @@
             <li class=""><a href="../Labs/Labs.html">TG Labs</a></li>
             <li class=""><a href="../Anketa/Anketa.html">Anketa</a></li>
               <li class="flex p-1 gap-5 items-center justify-center 
-              [&>a]:[&>div]:h-[2rem] [&>a]:[&>div]:w-[2rem] sm:[&>a]:[&>div]:h-[3rem] sm:[&>a]:[&>div]:w-[3rem]">                                               
+              [&>a]:[&>div]:size-[3rem]  sm:[&>a]:[&>div]:size-[3rem]">                                              
                 <a href="https://www.facebook.com" target="_blank"><div id="fb"></div></a>
                 <a href="https://www.instagram.com" target="_blank"><div id="in"></div></a>
                 <a href="https://www.x.com" target="_blank"><div id="x"></div></a>
@@ -71,10 +71,10 @@
 TerraGroup Labs is a specialized research division dedicated to advancing scientific knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine. Operating through advanced laboratory facilities and international research partnerships, the division pursues innovative solutions to complex scientific challenges.  Through rigorous research, advanced technologies, and multidisciplinary collaboration, TerraGroup Labs continues to explore new frontiers in science.
 
     </article>
-    <h2>Table of TG Labs injector</h2>
+    <h3>Table of TG Labs injector</h3>
 <div class="table-wrap">
-<table>
-    <thead>
+<table class="border-2">
+    <thead class="border-b-2">
  <tr>
     <th rowspan="2">Name</th>
     <th rowspan="2">Full Name</th>
@@ -86,8 +86,8 @@ TerraGroup Labs is a specialized research division dedicated to advancing scient
     <th>Debuffs</th>
   </tr>
   </thead>
-  <tbody>
-  <tr>
+  <tbody class="[&>tr]:[&>td]:[&>img]:p-2">
+  <tr class="bg-[var(--table-sec)]">
     <td>SJ1</td>
     <td>SJ1 TGLabs combat stimulant injector</td>
     <td><img src="../images/labs/SJ1_icon.webp" alt="SJ1"></td>
@@ -102,7 +102,7 @@ TerraGroup Labs is a specialized research division dedicated to advancing scient
     <td><b>Increases</b> maximum stamina & stamina recovery rate</td>
     <td><b>Causes</b>  Hands treomor & Tunnel vision with delays</td>
   </tr>
-    <tr>
+    <tr class="bg-[var(--table-sec)]">
     <td>SJ9</td>
     <td>SJ9 TGLabs combat stimulant injector</td>
     <td><img src="../images/labs/SJ9_icon.webp" alt="SJ9"></div></td>
@@ -119,7 +119,7 @@ TerraGroup Labs is a specialized research division dedicated to advancing scient
     <b>Increases</b> energy recovery & hydration recovery</td>
     <td><b>Raises</b> body temperature (+6 °C) with delays</td>
   </tr>
-    <tr>
+    <tr class="bg-[var(--table-sec)]">
     <td>SJ15</td>
     <td>SJ15 TGLabs combat stimulant injector</td>
     <td><img src="../images/labs/SJ15_icon.webp" alt="SJ15"></div></td>
@@ -136,8 +136,8 @@ TerraGroup Labs is a specialized research division dedicated to advancing scient
 
 
 
-<aside class="bg-[var(--aside-color)] rounded-lg">
-    <div class="border-b-2 border-t-2 xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]
+<aside class="bg-[var(--aside-color)] rounded-lg divide-y-3 divide-[var(--text-color-2)] p-3">
+    <div class="xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]
     [&>a]:border-b-2 [&>a]:border-b-brand [&>a]:rounded-lg [&>a]:w-fit [&>a]:p-2 [&>a]:bg-[var(--text-color-2)] [&>a]:text-[var(--news-color)] [&>a]:h-min
     [&>a]:hover:bg-[var(--text-color-4)] [&>a]:hover:text-white [&>a]:hover:border-0 [&>a]:relative [&>a]:top-2
     ">
@@ -153,7 +153,7 @@ TerraGroup Labs is a specialized research division dedicated to advancing scient
     </div></div>
 
    <div class="news m-5">
-    <h2 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h2>
+    <h3 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h3>
    <div class="news-scroller w-[80vw]  [&>div]:w-[80vw]
    flex gap-[2vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
    overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity xl:[&>div]:w-[15vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4

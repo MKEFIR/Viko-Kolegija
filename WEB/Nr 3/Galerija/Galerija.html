@@ -29,7 +29,7 @@
             <li class=""><a href="../Labs/Labs.html">TG Labs</a></li>
             <li class=""><a href="../Anketa/Anketa.html">Anketa</a></li>
               <li class="flex p-1 gap-5 items-center justify-center 
-              [&>a]:[&>div]:h-[2rem] [&>a]:[&>div]:w-[2rem] sm:[&>a]:[&>div]:h-[3rem] sm:[&>a]:[&>div]:w-[3rem]">                                               
+              [&>a]:[&>div]:size-[3rem]  sm:[&>a]:[&>div]:size-[3rem]">                                         
                 <a href="https://www.facebook.com" target="_blank"><div id="fb"></div></a>
                 <a href="https://www.instagram.com" target="_blank"><div id="in"></div></a>
                 <a href="https://www.x.com" target="_blank"><div id="x"></div></a>
@@ -71,7 +71,7 @@
     <content>
         <h2 id="central" class="text-2xl font-bold rounded-lg">Galerija</h2>
         
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(15rem,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(25rem,1fr))] gap-[clamp(1rem,calc(2vw+1rem),5rem)] p-10 perspective-[300px]
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(15rem,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-[clamp(1rem,calc(2vw+1rem),5rem)] p-10 perspective-[300px]
         [&>div]:relative [&>div]:transition [&>div]:duration-300 [&>div]:ease-in-out [&>div]:hover:translate-z-2
         [&>div]:[&>img]:aspect-[4 / 3] [&>div]:[&>img]:w-full [&>div]:[&>img]:rounded-lg [&>div]:[&>img]:object-cover
         [&>div]:[&>div]:[&>h3]:py-2 [&>div]:[&>div]:[&>h3]:text-[1.1rem] [&>div]:[&>div]:[&>h3]:font-bold [&>div]:[&>div]:[&>h3]:text-[var(--text-color-2)]
@@ -163,9 +163,9 @@
         </div>
    </content>
 
-<aside class="bg-[var(--aside-color)] rounded-lg">
-    <div class="border-b-2 border-t-2 xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]
-    [&>a]:border-b-2 [&>a]:border-b-brand [&>a]:rounded-lg [&>a]:w-fit [&>a]:p-2 [&>a]:bg-[var(--text-color-2)] [&>a]:text-[var(--news-color)] [&>a]:h-min
+<aside class="bg-[var(--aside-color)] rounded-lg divide-y-3 divide-[var(--text-color-2)] p-2        ">
+    <div class="xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]
+    [&>a]:rounded-lg [&>a]:w-fit [&>a]:p-2 [&>a]:bg-[var(--text-color-2)] [&>a]:text-[var(--news-color)] [&>a]:h-min
     [&>a]:hover:bg-[var(--text-color-4)] [&>a]:hover:text-white [&>a]:hover:border-0 [&>a]:relative [&>a]:top-2
     ">
         <h3 class="text-2xl font-bold m-4">TerraGroup Labs</h3>
@@ -173,7 +173,7 @@
         <a href="../Labs/Labs.html">Read More</a>
     </div>
     <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] 
-     border-b-2 border-b-brand text-[var(--text-color-2)] md:bg-position-[10rem]">
+    text-[var(--text-color-2)] md:bg-position-[10rem]">
      <div class="relative w-[75%] text-shadow-lg bottom-0">
         <h3 class="text-3xl font-bold m-4">OUR GLOBAL PRESENCE </h3>
         <p class="m-4 font-bold ">Over 40 major enterprises united under the TerraGroup umbrella, with branch offices and operations spanning more than 120 countries worldwide.</p>
@@ -270,7 +270,7 @@
         </div>
 
         <div class="col-span-2 content-center lg:col-span-1 lg:row-span-2 lg:row-start-1 xl:row-span-1">
-            <div class="flex justify-center gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:w-[3rem] 2xl:[&>a]:[&>div]:h-[3rem]">                                               
+            <div class="flex justify-center gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
           <a href="https://www.facebook.com" target="_blank"><div id="fb_w"></div></a>
            <a href="https://www.instagram.com" target="_blank"><div id="in_w"></div></a>
             <a href="https://www.x.com" target="_blank"><div id="x_w"></div></a>
