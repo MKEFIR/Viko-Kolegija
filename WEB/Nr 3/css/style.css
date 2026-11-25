@@ -1,4 +1,4 @@
-/* @import "tailwind.css"; */@import "root.css";
+@import "tailwindcss"; @import "root.css";
 html {scroll-behavior: smooth;}
 body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset; accent-color: var(--text-color-2);} 
 /*Podstawowy styl do wszystkiego*/
@@ -24,6 +24,10 @@ h2, h3, h4 {
 } h2{font-size: 2rem;}
   h3{font-size: 1.5rem;}
   h4{font-size: 1.1rem;}
+
+  @theme {
+  --breakpoint-3xl: 1900px;
+}
 
 @layer components {
 .news-scroller {

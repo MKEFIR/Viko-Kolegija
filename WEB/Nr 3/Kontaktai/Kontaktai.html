@@ -9,7 +9,7 @@
   <link href="./../css/output.css" rel="stylesheet">
   <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
-<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm">
+<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm  has-[:popover-open]:overflow-hidden has-[:popover-open]:[&>:not(header)]:pointer-events-none has-[:popover-open]:[&>:not(header)]:select-none">
     <header class="t-0 w-full sticky top-0 h-20 lg:h-22 flex justify-between shadow-2xl bg-[var(--body-color)] z-100">
      <div class="flex justify-between w-full mx-1 md:w-fit">
         <a href="../index.html"><div class="bg-[image:var(--tg-logo)] bg-cover bg-no-repeat h-12 w-40 m-2 lg:h-15 lg:w-50 xl:h-18 xl:w-60" ></div></a> <!-- Logotyp -->
@@ -66,14 +66,15 @@
 
 
 <main class="grid grid-cols-[1fr] grid-rows-[1fr_auto_auto] xl:grid-cols-[5fr_1fr] xl:grid-rows-[1fr]">
-    <content>
-        <div class="bg-[url(../images/bg-contacts.png)] dark:bg-[url(../images/bg-contacts_dark.png)] bg-cover bg-no-repeat inset-shadow-[0_0_10px_10px_var(--body-color)] min-h-[30vh] p-5 lg:*:w-[35vw]">
+    <content class="grid grid-cols-1 lg:grid-cols-4">
+        <div class="lg:col-span-4
+        bg-[url(../images/bg-contacts.png)] dark:bg-[url(../images/bg-contacts_dark.png)] bg-cover bg-no-repeat inset-shadow-[0_0_10px_10px_var(--body-color)] min-h-[30vh] p-5 lg:*:w-[35vw]">
             <p>Get in touch</p>
             <h2>Kontaktai TerraGroup</h2>
             <p>Mūsų pasaulinės komandos yra pasirengusios padėti spręsti įmonių, mokslinius ir regioninius klausimus.<br>Laukiame jūsų atsakymo.</p>
         </div>
 
-        <article class="grid grid-cols-[repeat(auto-fit,minmax(min(13rem,100%),1fr))] gap-3  [&>div]:[&>h3]:border-b-2 [&>div]:[&>h3]:border-b-brand [&>div]:[&>h3]:align-bottom
+        <article class="grid lg:col-span-4 grid-cols-[repeat(auto-fit,minmax(min(16rem,100%),1fr))] gap-3 [&>div]:bg-[var(--table-sec)] [&>div]:[&>h3]:border-b-2 [&>div]:[&>h3]:border-b-brand [&>div]:[&>h3]:align-bottom
         [&>div]:border-2 [&>div]:rounded-xl [&>div]:grid [&>div]:p-2 [&>div]:row-span-4 [&>div]:grid-rows-subgrid [&>div]:[&>h3]:text-center p-3
         [&>div]:[&>a]:text-[var(--text-color-2)] [&>div]:[&>a]:hover:text-[var(--text-color-1)] [&>div]:[&>a]:w-fit [&>div]:[&>a]:text-[1.1em]">
     <div class="box">
@@ -106,120 +107,91 @@
     </div>
      </article>
 
-     <form>
-        <fieldset>
-            <h4>SIŲSKITE MUMS ŽINUTĘ</h4>
-            <h3>CONTACT FORM</h3>
-            <p>Užpildykite žemiau esančią formą ir pasirinkite tinkamą skyrių.
-            Atsakysime kuo greičiau.</p>
-            <div class="form">
-            <div>
-            <input type="text" id="vardas" name="vardas" required="required" placeholder="Vardas...">
-            <input type="tel" id="telefonas" name="telefonas" maxlength="15" placeholder="Telefonas...">
-            </div>
-            <div>
-            <input type="text" id="pavarde" name="pavarde" required="required" placeholder="Pavardė...">
-            <input type="text" id="kompanija" name="kompanija" placeholder="Kompanija (optional)...">
-            </div>
-            <div>
-            <input type="email" id="email" name="email" required="required" maxlength="15" placeholder="El. paštas...">
-            <textarea id="vardas" name="opinion" required="required" rows="3" placeholder="Describe"></textarea>
-            </div><div>
-            <input type="checkbox" id="privacy-polity" name="privacy-polity">I acknowledge the applicant privacy notice and consent to the processing of my application.<br><br>
-            <label for="atsiskaitymas"></label></div>
-            <div>
-                <input  type="submit" value="Sent" class="bg-transparent hover:bg-[var(--text-color-2)] text-[var(--text-color-2)] font-semibold hover:text-white py-2 px-4 border border-[var(--text-color-2)] hover:border-transparent rounded"> 
-                <input type="reset" value="Reset" class="bg-transparent hover:bg-[var(--text-color-2)] text-[var(--text-color-2)] font-semibold hover:text-white py-2 px-4 border border-[var(--text-color-2)] hover:border-transparent rounded">
-            </div></div>
-        </fieldset>
-     </form>
-
-     <form class="w-full max-w-lg">
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full md:w-1/2 px-3">
-      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Last Name</label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Pavarde">
-    </div>
-    <div class="w-full md:w-1/2 px-3">
-      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Last Name</label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Pavarde">
-    </div>
-        <div class="w-full md:w-1/2 p-3">
-      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Phone</label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="tel" placeholder="Telefonas">
-    </div>
-        <div class="w-full md:w-1/2 p-3">
-      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Email</label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="Email">
-    </div>
-  </div>
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full px-3">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-        Password
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
-      <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
-    </div>
-  </div>
-  <div class="flex flex-wrap -mx-3 mb-2">
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
-        City
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
-    </div>
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-        State
-      </label>
-      <div class="relative">
-        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option>New Mexico</option>
-          <option>Missouri</option>
-          <option>Texas</option>
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-        </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
-        Zip
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
-    </div>
-  </div>
-</form>
-
-     <address>
-
-        <h3>OUR OFFICES</h3>
+     <address class="flex flex-col justify-end [&>div]:p-2 rounded-xl h-max gap-5 bg-[var(--table-sec)] rounded-xl ml-3 mb-3 [&>div]:[&>span]:bg-contain [&>div]:[&>span]:bg-center [&>div]:[&>span]:bg-no-repeat">
+        <img src="../images/terragroup_sign.png" alt="terragroup sign" class="rounded-t-xl">
+      
+        <div><h3>OUR OFFICES</h3></div>
         
-        <div>
+        <div class="flex gap-2">
+         <span class="size-12 bg-[url(../images/contacts/location_on_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/contacts/dark/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span> 
         <p>Headquarters<br>
         1 TerraGroup Plaza<br>
         Norvinsk, 454000<br>
         Russian Federation</p>
         </div>
 
-        <div>
+        <div class="flex gap-2">
+         <span class="size-12 bg-[url(../images/contacts/schedule_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/contacts/dark/schedule_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span> 
         <p>Business Hours<br>
         Mon - Fri: 9:00 - 18:00 (UTC+3)<br>
         Sat - Sun: Closed</p>
         </div>
 
-        <div>
-        <p>Global Offices</p>
+        <div class="flex gap-2">
+         <span class="size-12 bg-[url(../images/contacts/public_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/contacts/dark/public_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span> 
+        <p>Global Offices <br>
         <a href="#">View all locations</a>
+        </p>      
         </div>
-        <div>
+
+        <div class="flex gap-2 bg-[var(--color-a)] rounded-b-xl text-white">  
+         <span class="size-12 bg-[url(../images/contacts/dark/info_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span> 
         <p>For urgent matters outside of business
-        hours, please contact our emergency line:<br>
+        hours,<br>please contact our emergency line:<br>
         +7 (495) 542-87-21</p>
         </div>
      </address>
+
+<form class="w-full p-5 lg:col-span-3">
+            <h4>SIŲSKITE MUMS ŽINUTĘ</h4>
+            <h3>CONTACT FORM</h3>
+            <p>Užpildykite žemiau esančią formą ir pasirinkite tinkamą skyrių.
+            Atsakysime kuo greičiau.</p>
+  <div class="flex flex-wrap -mx-3">
+    <div class="w-full md:w-1/2 p-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-first-name">First Name</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-first-name" type="text" placeholder="Vardas" required>
+    </div>
+      <div class="w-full md:w-1/2 p-3">
+        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Last Name</label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-last-name" type="text" placeholder="Pavarde" required>
+      </div>
+    <div class="w-full md:w-1/2 p-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-phone-name">Phone</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-phone-name" type="tel" placeholder="Telefonas" required>
+    </div>
+      <div class="w-full md:w-1/2 p-3">
+        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-email-name">Email</label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-email-name" type="email" placeholder="Email" required>
+      </div>
+  </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full p-3">
+        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2">Subject</label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" type="text" placeholder="Tema" required>
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label for="message" class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2">Your message</label>
+        <textarea id="message" rows="4" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" placeholder="Rašykite savo mintis čia..." required></textarea>
+      </div>
+    </div>
+    <div class="flex flex-wrap ml-10 mb-6 gap-3 [&>button]:transition-all [&>button]:duration-300 [&>button]:ease-in-out [&>button]:[&>p]:font-bold [&>button]:[&>p]:text-lg">
+      
+      <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        <p>Send</p>
+        <span class="size-6 bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/send_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
+                             dark:bg-[url(../images/send_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
+      </button>
+
+      <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        <p>Reset</p>
+        <span class="size-6 bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/restart_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
+                             dark:bg-[url(../images/restart_alt_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
+      </button>
+    </div>
+</form>
 
 
     </content>
@@ -230,7 +202,7 @@
         <p class="text-[var(--text-color-1)]">TerraGroup Labs is a specialized research division dedicated to advancing scientific 
             knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
     </div>
-    <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] 
+    <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] lg:min-h-[40vh] xl:min-h-[30vh]
      border-b-2 border-b-brand text-[var(--text-color-2)] bg-position-[2rem] md:bg-position-[10rem] relative">
      <div class="absolute md:relative w-[75%] text-shadow-lg bottom-0">
         <h3 class="text-3xl font-bold m-4">OUR GLOBAL PRESENCE </h3>
@@ -256,7 +228,9 @@
         <p>In light of changing regional conditions, TerraGroup continues to 
             coordinate with contracted security providers to support personnel safety 
             and maintain continuity across designated facilities.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a>  
     </div>
     <div class="news-box"><div>CORPORATE NOTICE · SEP 2015</div>
         <h3>Regional Operations in Tarkov Subject to Extraordinary Conditions</h3>
@@ -264,35 +238,45 @@
         <p>Due to the exceptional security situation affecting the region,
              TerraGroup advises all relevant parties that normal 
         operational schedules and communication channels may be disrupted</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
     
     <div class="news-box"><div>REGIONAL EXPANSION · AUG 2009</div>
         <h3>TerraGroup Announces Strategic Investment in the Norvinsk Region</h3>
 
         <p>TerraGroup International today announced a long-term investment and cooperation agreement with regional representatives in Norvinsk, marking a significant expansion of the company's activities in northwestern Russia.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
         
     <div class="news-box"><div>CORPORATE NEWS · SEP 2008</div>
         <h3>TerraGroup Expands Agricultural Biotechnology Research</h3>
 
         <p>TerraGroup Labs PLC announces expanded research initiatives focused on crop resilience, sustainable agriculture, and next-generation farming technologies.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
     <div class="news-box"><div>OPERATIONS · MAY 2008</div>
         <h3>USEC Supports Updated Facility Security Standards</h3>
 
         <p>Under its existing service agreement, USEC will assist with access management, emergency readiness, and the protection of designated TerraGroup facilities and personnel.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
     <div class="news-box"><div>SECURITY & PARTNERSHIPS · APR 2004</div>
         <h3>TerraGroup sign contrac with USEC PMC</h3>
 
         <p>Today, TerraGroup signs a contract with USEC. From that moment on, USEC operates as the corporation's private army, responsible for protecting its secrets and facilities.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
 </div></div>

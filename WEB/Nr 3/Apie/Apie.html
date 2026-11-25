@@ -10,7 +10,7 @@
   <link href="./../css/output.css" rel="stylesheet">
   <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
-<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm">
+<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm  has-[:popover-open]:overflow-hidden has-[:popover-open]:[&>:not(header)]:pointer-events-none has-[:popover-open]:[&>:not(header)]:select-none">
     <header class="t-0 w-full sticky top-0 h-20 lg:h-22 flex justify-between shadow-2xl bg-[var(--body-color)] z-100">
      <div class="flex justify-between w-full mx-1 md:w-fit">
         <a href="../index.html"><div class="bg-[image:var(--tg-logo)] bg-cover bg-no-repeat h-12 w-40 m-2 lg:h-15 lg:w-50 xl:h-18 xl:w-60" ></div></a> <!-- Logotyp -->
@@ -116,61 +116,61 @@
     Jos viešoji misija pabrėžia inovacijas ir žemės ūkio produktyvumo gerinimą.</p>
      <h2>Table of TG Labs injector</h2>
     <div class="max-w-full overflow-x-auto">
-<table class="border-2 max-sm:w-[200vw] max-md:w-[150vw]">
+<table class="border-2 max-sm:w-[200vw] max-md:w-[150vw] lg:w-full">
     <thead class="border-b-2 [&>tr]:[&>th]:p-2">
- <tr>
-    <th rowspan="2">Name</th>
-    <th rowspan="2">Full Name</th>
-    <th rowspan="2">Image</th>
-    <th colspan="2">Effect</th>
-  </tr>
-   <tr>
-    <th>Buffs</th>
-    <th>Debuffs</th>
-  </tr>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Full Name</th>
+            <th rowspan="2">Image</th>
+            <th colspan="2">Effect</th>
+        </tr>
+        <tr>
+            <th>Buffs</th>
+            <th>Debuffs</th>
+        </tr>
   </thead>
   <tbody class="[&>tr]:[&>td]:p-2">
-  <tr class="bg-[var(--table-sec)]">
-    <td>SJ1</td>
-    <td>SJ1 TGLabs combat stimulant injector</td>
-    <td><img src="../images/labs/SJ1_icon.webp" alt="SJ1"></td>
-    <td>
-    <b>Increases</b> Endurance, Strength & Stress Resistance</td>
-    <td><b>Decreases</b> energy recovery & hydration recovery</td>
-  </tr>
-  <tr>
-    <td>SJ6</td>
-    <td>SJ6 TGLabs combat stimulant injector</td>
-    <td><img src="../images/labs/SJ6_icon.webp" alt="SJ6"></div></td>
-    <td><b>Increases</b> maximum stamina & stamina recovery rate</td>
-    <td><b>Causes</b>  Hands treomor & Tunnel vision with delays</td>
-  </tr>
     <tr class="bg-[var(--table-sec)]">
-    <td>SJ9</td>
-    <td>SJ9 TGLabs combat stimulant injector</td>
-    <td><img src="../images/labs/SJ9_icon.webp" alt="SJ9"></div></td>
-    <td><b>Lowers</b> body temperature (-7 °C)</td>
-    <td><b>Decreases</b>  Metabolism, Decreases health regeneration<br>
-    <b>Causes</b> Hands tremor & Pain with delays</td>
-  </tr>
-  <tr>
-    <td>SJ12</td>
-    <td>SJ12 TGLabs combat stimulant injector</td>
-    <td><img src="../images/labs/SJ12_icon.webp" alt="SJ12"></div></td>
-    <td><b>Increases</b> Perception<br>
-    <b>Lowers</b> body temperature (-4 °C)<br>
-    <b>Increases</b> energy recovery & hydration recovery</td>
-    <td><b>Raises</b> body temperature (+6 °C) with delays</td>
-  </tr>
-    <tr class="bg-[var(--table-sec)]">
-    <td>SJ15</td>
-    <td>SJ15 TGLabs combat stimulant injector</td>
-    <td><img src="../images/labs/SJ15_icon.webp" alt="SJ15"></div></td>
-    <td><b>Increases</b> Endurance, Strength, Attention, Perception,<br> Weight limit, Maximum stamina, Health regeneration,<br> Stamina recovery rate<br>
-    <b>Stops and prevents</b> Light bleeding, Heavy bleeding<br>
-    <b>Antidote</b></td>
-    <td><b>50% Chance:</b> Decreases health regeneration (instant death)</td>
-  </tr>
+        <td>SJ1</td>
+        <td>SJ1 TGLabs combat stimulant injector</td>
+        <td><img src="../images/labs/SJ1_icon.webp" alt="SJ1"></td>
+        <td>
+        <b>Increases</b> Endurance, Strength & Stress Resistance</td>
+        <td><b>Decreases</b> energy recovery & hydration recovery</td>
+    </tr>
+    <tr>
+        <td>SJ6</td>
+        <td>SJ6 TGLabs combat stimulant injector</td>
+        <td><img src="../images/labs/SJ6_icon.webp" alt="SJ6"></div></td>
+        <td><b>Increases</b> maximum stamina & stamina recovery rate</td>
+        <td><b>Causes</b>  Hands treomor & Tunnel vision with delays</td>
+    </tr>
+        <tr class="bg-[var(--table-sec)]">
+        <td>SJ9</td>
+        <td>SJ9 TGLabs combat stimulant injector</td>
+        <td><img src="../images/labs/SJ9_icon.webp" alt="SJ9"></div></td>
+        <td><b>Lowers</b> body temperature (-7 °C)</td>
+        <td><b>Decreases</b>  Metabolism, Decreases health regeneration<br>
+        <b>Causes</b> Hands tremor & Pain with delays</td>
+    </tr>
+    <tr>
+        <td>SJ12</td>
+        <td>SJ12 TGLabs combat stimulant injector</td>
+        <td><img src="../images/labs/SJ12_icon.webp" alt="SJ12"></div></td>
+        <td><b>Increases</b> Perception<br>
+        <b>Lowers</b> body temperature (-4 °C)<br>
+        <b>Increases</b> energy recovery & hydration recovery</td>
+        <td><b>Raises</b> body temperature (+6 °C) with delays</td>
+    </tr>
+        <tr class="bg-[var(--table-sec)]">
+        <td>SJ15</td>
+        <td>SJ15 TGLabs combat stimulant injector</td>
+        <td><img src="../images/labs/SJ15_icon.webp" alt="SJ15"></div></td>
+        <td><b>Increases</b> Endurance, Strength, Attention, Perception,<br> Weight limit, Maximum stamina, Health regeneration,<br> Stamina recovery rate<br>
+        <b>Stops and prevents</b> Light bleeding, Heavy bleeding<br>
+        <b>Antidote</b></td>
+        <td><b>50% Chance:</b> Decreases health regeneration (instant death)</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -184,7 +184,7 @@
         <p class="text-[var(--text-color-1)]">TerraGroup Labs is a specialized research division dedicated to advancing scientific 
             knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
     </div>
-    <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] 
+    <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] lg:min-h-[40vh] xl:min-h-[30vh]
      border-b-2 border-b-brand text-[var(--text-color-2)] md:bg-position-[10rem]">
      <div class="relative w-[75%] text-shadow-lg bottom-0">
         <h3 class="text-3xl font-bold m-4">OUR GLOBAL PRESENCE </h3>
@@ -210,7 +210,9 @@
         <p>In light of changing regional conditions, TerraGroup continues to 
             coordinate with contracted security providers to support personnel safety 
             and maintain continuity across designated facilities.</p>
-        <a href="#" class="">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a>  
     </div>
     <div class="news-box"><div>CORPORATE NOTICE · SEP 2015</div>
         <h3>Regional Operations in Tarkov Subject to Extraordinary Conditions</h3>
@@ -218,35 +220,45 @@
         <p>Due to the exceptional security situation affecting the region,
              TerraGroup advises all relevant parties that normal 
         operational schedules and communication channels may be disrupted</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
     
     <div class="news-box"><div>REGIONAL EXPANSION · AUG 2009</div>
         <h3>TerraGroup Announces Strategic Investment in the Norvinsk Region</h3>
 
         <p>TerraGroup International today announced a long-term investment and cooperation agreement with regional representatives in Norvinsk, marking a significant expansion of the company's activities in northwestern Russia.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
         
     <div class="news-box"><div>CORPORATE NEWS · SEP 2008</div>
         <h3>TerraGroup Expands Agricultural Biotechnology Research</h3>
 
         <p>TerraGroup Labs PLC announces expanded research initiatives focused on crop resilience, sustainable agriculture, and next-generation farming technologies.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
     <div class="news-box"><div>OPERATIONS · MAY 2008</div>
         <h3>USEC Supports Updated Facility Security Standards</h3>
 
         <p>Under its existing service agreement, USEC will assist with access management, emergency readiness, and the protection of designated TerraGroup facilities and personnel.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
     <div class="news-box"><div>SECURITY & PARTNERSHIPS · APR 2004</div>
         <h3>TerraGroup sign contrac with USEC PMC</h3>
 
         <p>Today, TerraGroup signs a contract with USEC. From that moment on, USEC operates as the corporation's private army, responsible for protecting its secrets and facilities.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
 </div></div>

@@ -9,7 +9,7 @@
   <link href="./../css/output.css" rel="stylesheet">
   <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
-<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm">
+<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm  has-[:popover-open]:overflow-hidden has-[:popover-open]:[&>:not(header)]:pointer-events-none has-[:popover-open]:[&>:not(header)]:select-none">
     <header class="t-0 w-full sticky top-0 h-20 lg:h-22 flex justify-between shadow-2xl bg-[var(--body-color)] z-100">
      <div class="flex justify-between w-full mx-1 md:w-fit">
         <a href="../index.html"><div class="bg-[image:var(--tg-logo)] bg-cover bg-no-repeat h-12 w-40 m-2 lg:h-15 lg:w-50 xl:h-18 xl:w-60" ></div></a> <!-- Logotyp -->
@@ -75,7 +75,7 @@
         <p class="text-[var(--text-color-1)]">TerraGroup Labs is a specialized research division dedicated to advancing scientific 
             knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
     </div>
-    <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] 
+    <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] lg:min-h-[40vh] xl:min-h-[30vh]
      border-b-2 border-b-brand text-[var(--text-color-2)] bg-position-[2rem] md:bg-position-[10rem] relative">
      <div class="absolute md:relative w-[75%] text-shadow-lg bottom-0">
         <h3 class="text-3xl font-bold m-4">OUR GLOBAL PRESENCE </h3>
@@ -101,7 +101,9 @@
         <p>In light of changing regional conditions, TerraGroup continues to 
             coordinate with contracted security providers to support personnel safety 
             and maintain continuity across designated facilities.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a>  
     </div>
     <div class="news-box"><div>CORPORATE NOTICE · SEP 2015</div>
         <h3>Regional Operations in Tarkov Subject to Extraordinary Conditions</h3>
@@ -109,35 +111,45 @@
         <p>Due to the exceptional security situation affecting the region,
              TerraGroup advises all relevant parties that normal 
         operational schedules and communication channels may be disrupted</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
     
     <div class="news-box"><div>REGIONAL EXPANSION · AUG 2009</div>
         <h3>TerraGroup Announces Strategic Investment in the Norvinsk Region</h3>
 
         <p>TerraGroup International today announced a long-term investment and cooperation agreement with regional representatives in Norvinsk, marking a significant expansion of the company's activities in northwestern Russia.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
         
     <div class="news-box"><div>CORPORATE NEWS · SEP 2008</div>
         <h3>TerraGroup Expands Agricultural Biotechnology Research</h3>
 
         <p>TerraGroup Labs PLC announces expanded research initiatives focused on crop resilience, sustainable agriculture, and next-generation farming technologies.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
     <div class="news-box"><div>OPERATIONS · MAY 2008</div>
         <h3>USEC Supports Updated Facility Security Standards</h3>
 
         <p>Under its existing service agreement, USEC will assist with access management, emergency readiness, and the protection of designated TerraGroup facilities and personnel.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
     <div class="news-box"><div>SECURITY & PARTNERSHIPS · APR 2004</div>
         <h3>TerraGroup sign contrac with USEC PMC</h3>
 
         <p>Today, TerraGroup signs a contract with USEC. From that moment on, USEC operates as the corporation's private army, responsible for protecting its secrets and facilities.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="group flex gap-2">Read More
+         <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
+        </a> 
     </div>
 
 </div></div>
@@ -158,7 +170,7 @@
             <li><a href="../Apie/Apie.html">Apie Mus</a></li>
             <li><a href="../Galerija/Galerija.html">Galerija</a></li>
             <li><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
-            <li><a href="../Tyrimai/Tyrimai.html">Tyrimai</a></li>
+            <li class="opacity-50 *:cursor-not-allowed"><a href="#">TG Labs</a></li>
             <li><a href="../Anketa/Anketa.html">Anketa</a></li>
          </ul>
         </div>

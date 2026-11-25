@@ -11,6 +11,7 @@
     --text-color-2: #2C4883;
     --text-color-3: #2C4883;
     --text-color-4: #85a9df;
+    --text-color-5: #EFF2F7;
     --text-index: white;
 
 --body-color: #EFF2F7;
@@ -32,6 +33,8 @@
 --color-b: #2C4883;
 --table-sec: #F3F8FD;
 --border: white;
+--send: url(../images/send_24dp_2C4883_FILL0_wght400_GRAD0_opsz24.svg);
+--reset: url(../images/restart_alt_24dp_2C4883_FILL0_wght400_GRAD0_opsz24.svg);
 
 --bg-contacts: url(../images/bg-contacts.png);
 --background: url(../images/Background.png);
@@ -71,6 +74,7 @@
     --text-color-2: rgb(133, 169, 223);
     --text-color-3: white;
     --text-color-4: #2C4883;
+    --text-color-5: #05111B;
     --text-index: white;
 
 --body-color: #05111B;
@@ -92,6 +96,8 @@
 --color-b: rgb(133, 169, 223);
 --table-sec: #1c2835;
 --border: rgb(156, 155, 155);
+--send: url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--reset: url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 
 --bg-contacts: url(../images/bg-contacts_dark.png);
 --background: url(../images/Background_dark.png);
