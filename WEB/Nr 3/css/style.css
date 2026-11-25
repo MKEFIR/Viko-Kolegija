@@ -1,6 +1,28 @@
-@import "tailwindcss"; @import "root.css";
-html {scroll-behavior: smooth;}
-body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset; accent-color: var(--text-color-2);} 
+@import "tailwindcss";
+
+/* ...your @theme blocks... */
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-body font-sans text-fg;
+    &:has(:popover-open) {
+      overflow: hidden;
+      & > :not(header) {
+        filter: blur(var(--blur-sm));
+        pointer-events: none;
+        user-select: none;
+      }
+    }
+  }
+  body > * {
+    transition: filter 0.3s ease-in-out;
+  }
+}
+
+body{min-height: 100vh; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset; accent-color: var(--text-color-2);} 
 /*Podstawowy styl do wszystkiego*/
 body::after{
    position: absolute;
@@ -47,6 +69,7 @@ h2, h3, h4 {
 }
 @layer base {
   a  { @apply transition-colors duration-300 ease-in-out; }
+  body  { @apply bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm  has-[:popover-open]:overflow-hidden has-[:popover-open]:[&>:not(header)]:pointer-events-none has-[:popover-open]:[&>:not(header)]:select-none transition-all duration-300 ease-in-out; }
 }
 
 @layer components {

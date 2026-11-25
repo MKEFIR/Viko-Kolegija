@@ -9,7 +9,7 @@
   <link href="./../css/output.css" rel="stylesheet">
   <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
-<body class="bg-[var(--body-color)] has-[:popover-open]:[&_main]:blur-sm  has-[:popover-open]:overflow-hidden has-[:popover-open]:[&>:not(header)]:pointer-events-none has-[:popover-open]:[&>:not(header)]:select-none">
+<body>
     <header class="t-0 w-full sticky top-0 h-20 lg:h-22 flex justify-between shadow-2xl bg-[var(--body-color)] z-100">
      <div class="flex justify-between w-full mx-1 md:w-fit">
         <a href="../index.html"><div class="bg-[image:var(--tg-logo)] bg-cover bg-no-repeat h-12 w-40 m-2 lg:h-15 lg:w-50 xl:h-18 xl:w-60" ></div></a> <!-- Logotyp -->
@@ -107,7 +107,7 @@
     </div>
      </article>
 
-     <address class="flex flex-col justify-end [&>div]:p-2 rounded-xl h-max gap-5 bg-[var(--table-sec)] rounded-xl ml-3 mb-3 [&>div]:[&>span]:bg-contain [&>div]:[&>span]:bg-center [&>div]:[&>span]:bg-no-repeat">
+     <address class="flex flex-col justify-end [&>div]:p-2 rounded-xl h-max gap-5 bg-[var(--table-sec)] rounded-xl ml-3 [&>div]:[&>span]:bg-contain [&>div]:[&>span]:bg-center [&>div]:[&>span]:bg-no-repeat">
         <img src="../images/terragroup_sign.png" alt="terragroup sign" class="rounded-t-xl">
       
         <div><h3>OUR OFFICES</h3></div>
@@ -178,13 +178,11 @@
       </div>
     </div>
     <div class="flex flex-wrap ml-10 mb-6 gap-3 [&>button]:transition-all [&>button]:duration-300 [&>button]:ease-in-out [&>button]:[&>p]:font-bold [&>button]:[&>p]:text-lg">
-      
       <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
         <p>Send</p>
         <span class="size-6 bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/send_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
                              dark:bg-[url(../images/send_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
       </button>
-
       <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
         <p>Reset</p>
         <span class="size-6 bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/restart_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
@@ -204,7 +202,7 @@
     </div>
     <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] lg:min-h-[40vh] xl:min-h-[30vh]
      border-b-2 border-b-brand text-[var(--text-color-2)] bg-position-[2rem] md:bg-position-[10rem] relative">
-     <div class="absolute md:relative w-[75%] text-shadow-lg bottom-0">
+     <div class="absolute w-[75%] text-shadow-lg bottom-0">
         <h3 class="text-3xl font-bold m-4">OUR GLOBAL PRESENCE </h3>
         <p class="m-4 font-bold ">Over 40 major enterprises united under the TerraGroup umbrella, with branch offices and operations spanning more than 120 countries worldwide.</p>
     </div></div>
@@ -284,7 +282,7 @@
 
     </aside>
 
-    <footer class="xl:col-span-2 bg-[var(--footer-color)] text-[var(--footer-text)] p-3 bottom-0 grid grid-cols-2 md:grid-cols-[2fr_1fr_2fr] gap-5 xl:grid-cols-[4fr_2fr_1fr_2fr] w-full">
+    <footer class="xl:col-span-2 bg-[var(--footer-color)] text-[var(--footer-text)] p-3 mt-5 bottom-0 grid grid-cols-2 md:grid-cols-[2fr_1fr_2fr] gap-5 xl:grid-cols-[4fr_2fr_1fr_2fr] w-full">
 
         <div class="hidden xl:block"><img src="../images/Terra_Group_logo_white.png" alt="Logo" class="max-h-40"></div>
 
