@@ -874,7 +874,6 @@ font-size: 2rem;
     "p a a a a a";
     gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }.category a{

@@ -24,7 +24,7 @@
             <li class=""><a href="../Apie/Apie.html">Apie Mus</a></li> 
             <li class=""><a href="../Galerija/Galerija.html">Galerija</a></li>
             <li class=""><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
-            <li class=""><a href="../Labs/Labs.html">TG Labs</a></li>
+            <li class="opacity-50 *:cursor-not-allowed"><a href="#">TG Labs</a></li>
             <li class=""><a href="../Anketa/Anketa.html">Anketa</a></li>
               <li class="flex p-1 gap-5 items-center justify-center 
               [&>a]:[&>div]:size-[3rem]  sm:[&>a]:[&>div]:size-[3rem]">                                             
@@ -38,11 +38,11 @@
         <div class="hidden md:block lg:ml-1">                                           <!-- Navigacja -->
           <ul class="flex items-center justify-center gap-3 text-[var(--text-color-2)] text-xl font-bold mt-4 lg:mt-6 lg:text-2xl
                 [&>li]:hover:text-[var(--text-color-4)]">
-            <li><a href="../Apie/Apie.html">Apie Mus</a></li> 
-            <li><a href="../Galerija/Galerija.html">Galerija</a></li>
-            <li><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
-            <li><a href="../Labs/Labs.html">TG Labs</a></li>
-            <li><a href="../Anketa/Anketa.html">Anketa</a></li>
+            <li class="border-b-2"><a href="../Apie/Apie.html">Apie Mus</a></li> 
+            <li class=""><a href="../Galerija/Galerija.html">Galerija</a></li>
+            <li class=""><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
+            <li class="opacity-50 *:cursor-not-allowed"><a href="#">TG Labs</a></li>
+            <li class=""><a href="../Anketa/Anketa.html">Anketa</a></li>
           </ul>
          </div>
      </nav>    
@@ -64,11 +64,11 @@
         </div></div>
     </header>
  <!-- Navigacija -->
-    <main class="grid grid-cols-[1fr] grid-rows-[1fr_auto_auto] xl:grid-cols-[5fr_1fr] xl:grid-rows-[1fr]">
+    <main class="grid grid-cols-[minmax(0,1fr)] grid-rows-[1fr_auto_auto] xl:grid-cols-[5fr_1fr] xl:grid-rows-[1fr]">
     
-    <content class="divide-y-3 divide-[var(--text-color-2)]">
-     <article>
-        <h2>„TerraGroup International“</h2>
+    <content class="[&>article]:p-3 [&>article]:[&>h2]:text-center [&>article]:[&>h2]:py-3">
+     <article class="bg-[url(../images/Background.png)] dark:bg-[url(../images/Background_dark.png)] bg-cover bg-no-repeat inset-shadow-[0_0_10px_10px_var(--body-color)]">
+        <h2 class="text-center pb-2">„TerraGroup International“</h2>
         <h3>Mokslo pažanga. Pažangos skatinimas. Ateities formavimas.</h3>
 
     <p>„TerraGroup International“ yra tarptautinė kontroliuojančioji bendrovė, vienijanti mokslinių tyrimų, biotechnologijų, pramonės plėtros ir pažangių technologijų patirtį.</p>
@@ -78,7 +78,8 @@
 
      <article>
         <h2>Mūsų misija</h2>
-        <div class="about-box">
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(min(13rem,100%),1fr))] gap-3  [&>div]:[&>h3]:border-b-2 [&>div]:[&>h3]:border-b-brand [&>div]:[&>h3]:align-bottom
+        [&>div]:border-2 [&>div]:rounded-xl [&>div]:grid [&>div]:p-2 [&>div]:row-span-2 [&>div]:grid-rows-subgrid [&>div]:[&>h3]:text-center">
         <div class="box">
         <h3>Mokslinė pažanga</h3>
     <p>Remti mokslinius tyrimus ir technologinę plėtrą, siekiant spręsti sudėtingus pramonės ir aplinkosaugos iššūkius.</p>
@@ -106,25 +107,82 @@
 
         <p>Vykdydama veiklą daugelyje rinkų, „TerraGroup“ ir toliau daugiausia dėmesio skiria partnerysčių kūrimui ir ilgalaikių strateginių tikslų siekimui.</p>
      </article>
-          <article>
-        <h4>Mūsų padalinis „TerraGroup Labs“</h4>
-        <h3></h3>
+          <article class="    
+    [&>a]:border-b-2 [&>a]:border-b-brand [&>a]:rounded-lg [&>a]:w-fit [&>a]:p-2 [&>a]:bg-[var(--text-color-2)] [&>a]:text-[var(--news-color)] [&>a]:h-min
+    [&>a]:hover:bg-[var(--text-color-4)] [&>a]:hover:text-white [&>a]:hover:border-0 [&>a]:relative [&>a]:top-2">
+        <h3>Mūsų padalinis „TerraGroup Labs“</h3>
         <p>„TerraGroup Labs“ Biotechnologijos ir taikomieji tyrimai
     Atlieka tyrimus biologinių sistemų, žemės ūkio pritaikymo ir besiformuojančių mokslinių technologijų srityse. 
     Jos viešoji misija pabrėžia inovacijas ir žemės ūkio produktyvumo gerinimą.</p>
-    <br><a href="../Labs/Labs.html">Read More</a> 
+     <h2>Table of TG Labs injector</h2>
+    <div class="max-w-full overflow-x-auto">
+<table class="border-2 max-sm:w-[200vw] max-md:w-[150vw]">
+    <thead class="border-b-2 [&>tr]:[&>th]:p-2">
+ <tr>
+    <th rowspan="2">Name</th>
+    <th rowspan="2">Full Name</th>
+    <th rowspan="2">Image</th>
+    <th colspan="2">Effect</th>
+  </tr>
+   <tr>
+    <th>Buffs</th>
+    <th>Debuffs</th>
+  </tr>
+  </thead>
+  <tbody class="[&>tr]:[&>td]:p-2">
+  <tr class="bg-[var(--table-sec)]">
+    <td>SJ1</td>
+    <td>SJ1 TGLabs combat stimulant injector</td>
+    <td><img src="../images/labs/SJ1_icon.webp" alt="SJ1"></td>
+    <td>
+    <b>Increases</b> Endurance, Strength & Stress Resistance</td>
+    <td><b>Decreases</b> energy recovery & hydration recovery</td>
+  </tr>
+  <tr>
+    <td>SJ6</td>
+    <td>SJ6 TGLabs combat stimulant injector</td>
+    <td><img src="../images/labs/SJ6_icon.webp" alt="SJ6"></div></td>
+    <td><b>Increases</b> maximum stamina & stamina recovery rate</td>
+    <td><b>Causes</b>  Hands treomor & Tunnel vision with delays</td>
+  </tr>
+    <tr class="bg-[var(--table-sec)]">
+    <td>SJ9</td>
+    <td>SJ9 TGLabs combat stimulant injector</td>
+    <td><img src="../images/labs/SJ9_icon.webp" alt="SJ9"></div></td>
+    <td><b>Lowers</b> body temperature (-7 °C)</td>
+    <td><b>Decreases</b>  Metabolism, Decreases health regeneration<br>
+    <b>Causes</b> Hands tremor & Pain with delays</td>
+  </tr>
+  <tr>
+    <td>SJ12</td>
+    <td>SJ12 TGLabs combat stimulant injector</td>
+    <td><img src="../images/labs/SJ12_icon.webp" alt="SJ12"></div></td>
+    <td><b>Increases</b> Perception<br>
+    <b>Lowers</b> body temperature (-4 °C)<br>
+    <b>Increases</b> energy recovery & hydration recovery</td>
+    <td><b>Raises</b> body temperature (+6 °C) with delays</td>
+  </tr>
+    <tr class="bg-[var(--table-sec)]">
+    <td>SJ15</td>
+    <td>SJ15 TGLabs combat stimulant injector</td>
+    <td><img src="../images/labs/SJ15_icon.webp" alt="SJ15"></div></td>
+    <td><b>Increases</b> Endurance, Strength, Attention, Perception,<br> Weight limit, Maximum stamina, Health regeneration,<br> Stamina recovery rate<br>
+    <b>Stops and prevents</b> Light bleeding, Heavy bleeding<br>
+    <b>Antidote</b></td>
+    <td><b>50% Chance:</b> Decreases health regeneration (instant death)</td>
+  </tr>
+  </tbody>
+</table>
+</div>
     </article>
     </content>
 
 
 <aside class="bg-[var(--aside-color)] rounded-lg divide-y-3 divide-[var(--text-color-2)] p-3">
-    <div class="xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]
-    [&>a]:border-b-2 [&>a]:border-b-brand [&>a]:rounded-lg [&>a]:w-fit [&>a]:p-2 [&>a]:bg-[var(--text-color-2)] [&>a]:text-[var(--news-color)] [&>a]:h-min
-    [&>a]:hover:bg-[var(--text-color-4)] [&>a]:hover:text-white [&>a]:hover:border-0 [&>a]:relative [&>a]:top-2
-    ">
+    <div class="xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]">
         <h4 class="text-2xl font-bold m-4">TerraGroup Labs</h4>
-        <p class="text-[var(--text-color-1)]">TerraGroup Labs is a specialized research division dedicated to advancing scientific knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
-        <a href="../Labs/Labs.html">Read More</a>
+        <p class="text-[var(--text-color-1)]">TerraGroup Labs is a specialized research division dedicated to advancing scientific 
+            knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
     </div>
     <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] 
      border-b-2 border-b-brand text-[var(--text-color-2)] md:bg-position-[10rem]">
@@ -134,25 +192,25 @@
     </div></div>
 
    <div class="news m-5">
-    <h4 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h4>
+    <h3 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h3>
    <div class="news-scroller w-[80vw]  [&>div]:w-[80vw]
    flex gap-[2vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
    overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity xl:[&>div]:w-[15vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4
    [&>div]:flex [&>div]:shrink-0 [&>div]:flex-col [&>div]:gap-4
    [&>div]:[&>a]:border-b-2 [&>div]:[&>a]:border-b-brand [&>div]:[&>a]:rounded-lg [&>div]:[&>a]:w-fit [&>div]:[&>a]:p-2 [&>div]:[&>a]:bg-[var(--text-color-2)] [&>div]:[&>a]:text-[var(--news-color)] [&>div]:[&>a]:h-min
-   [&>div]:[&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0
+   [&>div]:[&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0 [&>div]:[&>a]:transition-all [&>div]:[&>a]:duration-100 [&>div]:[&>a]:ease-in-out
    [&>div]:[&>p]:text-[var(--text-color-1)]  [&>div]:[&>h3]:text-[var(--text-color-2)] [&>div]:[&>h3]:text-xl [&>div]:[&>h3]:font-bold
    [&>div]:[&>div]:text-xs [&>div]:[&>div]:text-[var(--text-color-2)] [&>div]:[&>div]:border-b-2
-     sm:w-[85vw] sm:[&>div]:w-[40vw]
-   lg:w-[95vw] lg:[&>div]:w-[30vw]
-   xl:w-[15vw] xl:[&>div]:w-[15vw]">
+    sm:w-[85vw] sm:[&>div]:w-[40vw]
+    lg:w-[95vw] lg:[&>div]:w-[30vw]
+    xl:w-[15vw] xl:[&>div]:w-[15vw]">
     <div class="news-box"><div>OFFICIAL COMMUNICATION · FEB 2016</div>
         <h3>TerraGroup Reviews Security Arrangements for Regional Personnel</h3>
         
         <p>In light of changing regional conditions, TerraGroup continues to 
             coordinate with contracted security providers to support personnel safety 
             and maintain continuity across designated facilities.</p>
-        <a href="#">Read More</a>
+        <a href="#" class="">Read More</a>
     </div>
     <div class="news-box"><div>CORPORATE NOTICE · SEP 2015</div>
         <h3>Regional Operations in Tarkov Subject to Extraordinary Conditions</h3>
@@ -220,7 +278,7 @@
         </div>
 
         <div class="-mt-4 -ml-1">
-            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
+            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:size-[1.5rem] md:[&>a]:[&>div]:size-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
           <a href="https://www.facebook.com" target="_blank"><div id="fb_w"></div></a>
            <a href="https://www.instagram.com" target="_blank"><div id="in_w"></div></a>
             <a href="https://www.x.com" target="_blank"><div id="x_w"></div></a>

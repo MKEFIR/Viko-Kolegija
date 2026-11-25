@@ -1,6 +1,6 @@
 /* @import "tailwind.css"; */@import "root.css";
 html {scroll-behavior: smooth;}
-body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset;} 
+body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset; accent-color: var(--text-color-2);} 
 /*Podstawowy styl do wszystkiego*/
 body::after{
    position: absolute;
@@ -33,7 +33,16 @@ h2, h3, h4 {
 	            radial-gradient(at right, rgba(0,0,0,.2), transparent 70%) right / 15px 100%;
 	background-repeat: no-repeat;
 	background-attachment: local, scroll, local, scroll;
+
+.category-box:nth-child(2) {background-image: var(--about);}
+.category-box:nth-child(3) {background-image: var(--gallery);}
+.category-box:nth-child(4) {background-image: var(--contacts);}
+.category-box:nth-child(5) {background-image: var(--labs);}
+.category-box:nth-child(6) {background-image: var(--forms);}
 }
+}
+@layer base {
+  a  { @apply transition-colors duration-300 ease-in-out; }
 }
 
 @layer components {

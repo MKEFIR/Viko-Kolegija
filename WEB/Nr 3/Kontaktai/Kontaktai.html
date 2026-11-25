@@ -23,7 +23,7 @@
             <li class=""><a href="../Apie/Apie.html">Apie Mus</a></li> 
             <li class=""><a href="../Galerija/Galerija.html">Galerija</a></li>
             <li class=""><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
-            <li class=""><a href="../Labs/Labs.html">TG Labs</a></li>
+            <li class="opacity-50 *:cursor-not-allowed"><a href="#">TG Labs</a></li>
             <li class=""><a href="../Anketa/Anketa.html">Anketa</a></li>
               <li class="flex p-1 gap-5 items-center justify-center 
               [&>a]:[&>div]:size-[3rem]  sm:[&>a]:[&>div]:size-[3rem]">                                          
@@ -37,11 +37,11 @@
         <div class="hidden md:block lg:ml-1">                                           <!-- Navigacja -->
           <ul class="flex items-center justify-center gap-3 text-[var(--text-color-2)] text-xl font-bold mt-4 lg:mt-6 lg:text-2xl
                 [&>li]:hover:text-[var(--text-color-4)]">
-            <li><a href="../Apie/Apie.html">Apie Mus</a></li> 
-            <li><a href="../Galerija/Galerija.html">Galerija</a></li>
-            <li><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
-            <li><a href="../Labs/Labs.html">TG Labs</a></li>
-            <li><a href="../Anketa/Anketa.html">Anketa</a></li>
+            <li class=""><a href="../Apie/Apie.html">Apie Mus</a></li> 
+            <li class=""><a href="../Galerija/Galerija.html">Galerija</a></li>
+            <li class="border-b-2"><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
+            <li class="opacity-50 *:cursor-not-allowed"><a href="#">TG Labs</a></li>
+            <li class=""><a href="../Anketa/Anketa.html">Anketa</a></li>
           </ul>
          </div>
      </nav>    
@@ -67,13 +67,15 @@
 
 <main class="grid grid-cols-[1fr] grid-rows-[1fr_auto_auto] xl:grid-cols-[5fr_1fr] xl:grid-rows-[1fr]">
     <content>
-        <div id="central-contacts">
+        <div class="bg-[url(../images/bg-contacts.png)] dark:bg-[url(../images/bg-contacts_dark.png)] bg-cover bg-no-repeat inset-shadow-[0_0_10px_10px_var(--body-color)] min-h-[30vh] p-5 lg:*:w-[35vw]">
             <p>Get in touch</p>
             <h2>Kontaktai TerraGroup</h2>
             <p>Mūsų pasaulinės komandos yra pasirengusios padėti spręsti įmonių, mokslinius ir regioninius klausimus.<br>Laukiame jūsų atsakymo.</p>
         </div>
 
-        <article class="contact-box">
+        <article class="grid grid-cols-[repeat(auto-fit,minmax(min(13rem,100%),1fr))] gap-3  [&>div]:[&>h3]:border-b-2 [&>div]:[&>h3]:border-b-brand [&>div]:[&>h3]:align-bottom
+        [&>div]:border-2 [&>div]:rounded-xl [&>div]:grid [&>div]:p-2 [&>div]:row-span-4 [&>div]:grid-rows-subgrid [&>div]:[&>h3]:text-center p-3
+        [&>div]:[&>a]:text-[var(--text-color-2)] [&>div]:[&>a]:hover:text-[var(--text-color-1)] [&>div]:[&>a]:w-fit [&>div]:[&>a]:text-[1.1em]">
     <div class="box">
         <div class="contacts-box-con"></div>
         <h3>CORPORATE HEADQUARTERS</h3>
@@ -106,8 +108,8 @@
 
      <form>
         <fieldset>
-            <h3>SIŲSKITE MUMS ŽINUTĘ</h3>
-            <h2>CONTACT FORM</h2>
+            <h4>SIŲSKITE MUMS ŽINUTĘ</h4>
+            <h3>CONTACT FORM</h3>
             <p>Užpildykite žemiau esančią formą ir pasirinkite tinkamą skyrių.
             Atsakysime kuo greičiau.</p>
             <div class="form">
@@ -125,9 +127,71 @@
             </div><div>
             <input type="checkbox" id="privacy-polity" name="privacy-polity">I acknowledge the applicant privacy notice and consent to the processing of my application.<br><br>
             <label for="atsiskaitymas"></label></div>
-            <div id="submit-btn"><input type="submit" value="Sent"> <input type="reset" value="Reset"></div></div>
+            <div>
+                <input  type="submit" value="Sent" class="bg-transparent hover:bg-[var(--text-color-2)] text-[var(--text-color-2)] font-semibold hover:text-white py-2 px-4 border border-[var(--text-color-2)] hover:border-transparent rounded"> 
+                <input type="reset" value="Reset" class="bg-transparent hover:bg-[var(--text-color-2)] text-[var(--text-color-2)] font-semibold hover:text-white py-2 px-4 border border-[var(--text-color-2)] hover:border-transparent rounded">
+            </div></div>
         </fieldset>
      </form>
+
+     <form class="w-full max-w-lg">
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Last Name</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Pavarde">
+    </div>
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Last Name</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Pavarde">
+    </div>
+        <div class="w-full md:w-1/2 p-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Phone</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="tel" placeholder="Telefonas">
+    </div>
+        <div class="w-full md:w-1/2 p-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Email</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+        Password
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
+      <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-2">
+    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+        City
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+    </div>
+    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+        State
+      </label>
+      <div class="relative">
+        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+          <option>New Mexico</option>
+          <option>Missouri</option>
+          <option>Texas</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+        Zip
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
+    </div>
+  </div>
+</form>
 
      <address>
 
@@ -161,17 +225,14 @@
     </content>
 
 <aside class="bg-[var(--aside-color)] rounded-lg divide-y-3 divide-[var(--text-color-2)] p-3">
-    <div class="xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]
-    [&>a]:border-b-2 [&>a]:border-b-brand [&>a]:rounded-lg [&>a]:w-fit [&>a]:p-2 [&>a]:bg-[var(--text-color-2)] [&>a]:text-[var(--news-color)] [&>a]:h-min
-    [&>a]:hover:bg-[var(--text-color-4)] [&>a]:hover:text-white [&>a]:hover:border-0 [&>a]:relative [&>a]:top-2
-    ">
-        <h3 class="text-2xl font-bold m-4">TerraGroup Labs</h3>
-        <p class="text-[var(--text-color-1)]">TerraGroup Labs is a specialized research division dedicated to advancing scientific knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
-        <a href="../Labs/Labs.html">Read More</a>
+    <div class="xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]">
+        <h4 class="text-2xl font-bold m-4">TerraGroup Labs</h4>
+        <p class="text-[var(--text-color-1)]">TerraGroup Labs is a specialized research division dedicated to advancing scientific 
+            knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
     </div>
     <div class="bg-[url(../images/world-map-dotted-transparent.svg)] bg-cover bg-no-repeat h-fit min-h-[50vh] 
-     border-b-2 border-b-brand text-[var(--text-color-2)] md:bg-position-[10rem]">
-     <div class="relative w-[75%] text-shadow-lg bottom-0">
+     border-b-2 border-b-brand text-[var(--text-color-2)] bg-position-[2rem] md:bg-position-[10rem] relative">
+     <div class="absolute md:relative w-[75%] text-shadow-lg bottom-0">
         <h3 class="text-3xl font-bold m-4">OUR GLOBAL PRESENCE </h3>
         <p class="m-4 font-bold ">Over 40 major enterprises united under the TerraGroup umbrella, with branch offices and operations spanning more than 120 countries worldwide.</p>
     </div></div>
@@ -183,7 +244,7 @@
    overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity xl:[&>div]:w-[15vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4
    [&>div]:flex [&>div]:shrink-0 [&>div]:flex-col [&>div]:gap-4
    [&>div]:[&>a]:border-b-2 [&>div]:[&>a]:border-b-brand [&>div]:[&>a]:rounded-lg [&>div]:[&>a]:w-fit [&>div]:[&>a]:p-2 [&>div]:[&>a]:bg-[var(--text-color-2)] [&>div]:[&>a]:text-[var(--news-color)] [&>div]:[&>a]:h-min
-   [&>div]:[&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0
+   [&>div]:[&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0 [&>div]:[&>a]:transition-all [&>div]:[&>a]:duration-100 [&>div]:[&>a]:ease-in-out
    [&>div]:[&>p]:text-[var(--text-color-1)]  [&>div]:[&>h3]:text-[var(--text-color-2)] [&>div]:[&>h3]:text-xl [&>div]:[&>h3]:font-bold
    [&>div]:[&>div]:text-xs [&>div]:[&>div]:text-[var(--text-color-2)] [&>div]:[&>div]:border-b-2
      sm:w-[85vw] sm:[&>div]:w-[40vw]
@@ -249,7 +310,7 @@
             <li><a href="../Apie/Apie.html">Apie Mus</a></li>
             <li><a href="../Galerija/Galerija.html">Galerija</a></li>
             <li><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
-            <li><a href="../Tyrimai/Tyrimai.html">Tyrimai</a></li>
+            <li class="opacity-50 *:cursor-not-allowed"><a href="#">TG Labs</a></li>
             <li><a href="../Anketa/Anketa.html">Anketa</a></li>
          </ul>
         </div>
@@ -262,7 +323,7 @@
         </div>
 
         <div class="-mt-4 -ml-1">
-            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:w-[2rem] [&>a]:[&>div]:h-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
+            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:size-[1.5rem] md:[&>a]:[&>div]:size-[2rem] 2xl:[&>a]:[&>div]:size-[2.5rem]">                                               
           <a href="https://www.facebook.com" target="_blank"><div id="fb_w"></div></a>
            <a href="https://www.instagram.com" target="_blank"><div id="in_w"></div></a>
             <a href="https://www.x.com" target="_blank"><div id="x_w"></div></a>
