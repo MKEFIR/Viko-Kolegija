@@ -14,6 +14,7 @@
     --text-color-5: #EFF2F7;
     --text-index: white;
 
+    --shadow: rgba(0,0,0,.2);
 --body-color: #EFF2F7;
 --news-color: #EFF2F7;
     --news-border-bottom: #0C1D2D;
@@ -77,6 +78,7 @@
     --text-color-5: #05111B;
     --text-index: white;
 
+    --shadow: rgba(255,255,255,.2);
 --body-color: #05111B;
 --news-color: #0C1D2D;
     --news-border-bottom: #1a2d57;

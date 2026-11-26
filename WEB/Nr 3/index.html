@@ -107,7 +107,7 @@
                                         <!-- News -->
    <div class="news m-5">
     <h3 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h3>
-   <div class="news-scroller transition-colors duration-300 easy-in-out delay-300
+   <div data-drag-scroll class="news-scroller transition-colors duration-300 easy-in-out delay-300 cursor-grab active:cursor-grabbing [&>div]:*:select-none
    flex gap-[2vw] w-[82vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
    overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity [&>div]:w-[78vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4
    [&>div]:flex [&>div]:shrink-0 [&>div]:flex-col [&>div]:gap-4
@@ -216,6 +216,6 @@
         </div>
     </footer>
 </main>
-
+  <script src="js/scrool-news.js"></script>
 </body>
 </html>

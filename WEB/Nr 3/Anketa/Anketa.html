@@ -66,6 +66,68 @@
 
 <main class="grid grid-cols-[1fr] grid-rows-[1fr_auto_auto] xl:grid-cols-[5fr_1fr] xl:grid-rows-[1fr]">
     <content>
+      <h2 id="central">Anketa</h2>
+<form class="w-full p-5 lg:col-span-3">
+  <div class="flex flex-wrap -mx-3">
+    <div class="w-full md:w-1/2 p-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-first-name">First Name</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-first-name" type="text" placeholder="Vardas" required>
+    </div>
+      <div class="w-full md:w-1/2 p-3">
+        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Last Name</label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-last-name" type="text" placeholder="Pavarde" required>
+      </div>
+    <div class="w-full md:w-1/2 p-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-phone">Phone</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-phone" type="tel" placeholder="Telefonas" required>
+    </div>
+      <div class="w-full md:w-1/2 p-3">
+        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-email">Email</label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-email" type="email" placeholder="Email" required>
+      </div>
+          <div class="w-full md:w-1/2 p-3">
+      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-age">Age</label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-age" type="number" placeholder="Amžius" required>
+    </div>
+      <div class="w-full md:w-1/2 p-3">
+        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-sex">Sex</label>
+        <div class="flex items-center mb-4">
+      <input id="country-option-1" type="radio" name="countries" value="vyr" class="w-4 h-4 text-neutral-primary border-default-medium bg-neutral-secondary-medium rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none" checked>
+      <label for="country-option-1" class="select-none ms-2 text-sm font-medium text-heading">Vyras</label>
+      </div>
+
+  <div class="flex items-center mb-4">
+    <input id="country-option-2" type="radio" name="countries" value="mot" class="w-4 h-4 text-neutral-primary border-default-medium bg-neutral-secondary-medium rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none">
+    <label for="country-option-2" class="select-none ms-2 text-sm font-medium text-heading">Moteris</label>
+  </div>
+      </div>
+  </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full p-3">
+        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2">Subject</label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" type="text" placeholder="Tema" required>
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label for="message" class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2">Your message</label>
+        <textarea id="message" rows="4" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" placeholder="Rašykite savo mintis čia..." required></textarea>
+      </div>
+    </div>
+    <div class="flex flex-wrap ml-10 mb-6 gap-3 [&>button]:transition-all [&>button]:duration-300 [&>button]:ease-in-out [&>button]:[&>p]:font-bold [&>button]:[&>p]:text-lg">
+      <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        <p>Send</p>
+        <span class="size-6 bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/send_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
+                             dark:bg-[url(../images/send_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
+      </button>
+      <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        <p>Reset</p>
+        <span class="size-6 bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/restart_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
+                             dark:bg-[url(../images/restart_alt_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
+      </button>
+    </div>
+</form>
+
 <form action="Anketa.html" method="post">
    <h2 id="central">Anketa</h2>
           <fieldset>
@@ -146,6 +208,7 @@
             <div id="submit-btn"><input type="submit" value="Registruotis"> <input type="reset" value="Išvalyti"></div>
         </form> 
            </content>
+           
 
 <aside class="bg-[var(--aside-color)] rounded-lg divide-y-3 divide-[var(--text-color-2)] p-3">
     <div class="xl:border-t-0 border-b-brand pb-6 text-[var(--text-color-2)]">
@@ -162,7 +225,7 @@
 
    <div class="news m-5">
     <h2 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h2>
-   <div class="news-scroller w-[80vw]  [&>div]:w-[80vw]
+   <div data-drag-scroll class="news-scroller w-[80vw]  [&>div]:w-[80vw] cursor-grab active:cursor-grabbing [&>div]:*:select-none
    flex gap-[2vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
    overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity xl:[&>div]:w-[15vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4
    [&>div]:flex [&>div]:shrink-0 [&>div]:flex-col [&>div]:gap-4
@@ -170,16 +233,16 @@
    [&>div]:[&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0 [&>div]:[&>a]:transition-all [&>div]:[&>a]:duration-100 [&>div]:[&>a]:ease-in-out
    [&>div]:[&>p]:text-[var(--text-color-1)]  [&>div]:[&>h3]:text-[var(--text-color-2)] [&>div]:[&>h3]:text-xl [&>div]:[&>h3]:font-bold
    [&>div]:[&>div]:text-xs [&>div]:[&>div]:text-[var(--text-color-2)] [&>div]:[&>div]:border-b-2
-     sm:w-[85vw] sm:[&>div]:w-[40vw]
-   lg:w-[95vw] lg:[&>div]:w-[30vw]
-   xl:w-[15vw] xl:[&>div]:w-[15vw]">
+   sm:w-[86vw] sm:[&>div]:w-[40vw]
+   lg:w-[96vw] lg:[&>div]:w-[30vw]
+   xl:w-[18vw] xl:[&>div]:w-[17vw]">
     <div class="news-box"><div>OFFICIAL COMMUNICATION · FEB 2016</div>
         <h3>TerraGroup Reviews Security Arrangements for Regional Personnel</h3>
         
         <p>In light of changing regional conditions, TerraGroup continues to 
             coordinate with contracted security providers to support personnel safety 
             and maintain continuity across designated facilities.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a>  
     </div>
@@ -189,7 +252,7 @@
         <p>Due to the exceptional security situation affecting the region,
              TerraGroup advises all relevant parties that normal 
         operational schedules and communication channels may be disrupted</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -198,7 +261,7 @@
         <h3>TerraGroup Announces Strategic Investment in the Norvinsk Region</h3>
 
         <p>TerraGroup International today announced a long-term investment and cooperation agreement with regional representatives in Norvinsk, marking a significant expansion of the company's activities in northwestern Russia.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -207,7 +270,7 @@
         <h3>TerraGroup Expands Agricultural Biotechnology Research</h3>
 
         <p>TerraGroup Labs PLC announces expanded research initiatives focused on crop resilience, sustainable agriculture, and next-generation farming technologies.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -216,7 +279,7 @@
         <h3>USEC Supports Updated Facility Security Standards</h3>
 
         <p>Under its existing service agreement, USEC will assist with access management, emergency readiness, and the protection of designated TerraGroup facilities and personnel.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -225,7 +288,7 @@
         <h3>TerraGroup sign contrac with USEC PMC</h3>
 
         <p>Today, TerraGroup signs a contract with USEC. From that moment on, USEC operates as the corporation's private army, responsible for protecting its secrets and facilities.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -272,5 +335,6 @@
         </div>
     </footer>
 </main>
+  <script src="../js/scrool-news.js"></script>
 </body>
 </html>

@@ -209,7 +209,7 @@
 
    <div class="news m-5">
     <h2 class="text-[#2C4883] dark:text-[#85a9df] text-xl font-bold border-b-2 border-b-brand w-min sm:w-fit">LATEST NEWS & ANNOUNCEMENTS</h2>
-   <div class="news-scroller w-[80vw]  [&>div]:w-[80vw]
+   <div data-drag-scroll class="news-scroller w-[80vw]  [&>div]:w-[80vw] cursor-grab active:cursor-grabbing [&>div]:*:select-none
    flex gap-[2vw] p-3 mx-auto *:p-5 [&>div]:border-3 [&>div]:border-b-brand text-[#2C4883] [&>div]:rounded-lg [&>div]:bg-[var(--news-color)]
    overflow-x-scroll overflow-y-hidden align-center snap-x snap-proximity xl:[&>div]:w-[15vw] [&>div]:snap-center [&>div]:relative [&>div]:pb-20 [&>div]:[&>a]:absolute [&>div]:[&>a]:bottom-4
    [&>div]:flex [&>div]:shrink-0 [&>div]:flex-col [&>div]:gap-4
@@ -217,16 +217,16 @@
    [&>div]:[&>a]:hover:bg-[var(--text-color-4)] [&>div]:[&>a]:hover:text-white [&>div]:[&>a]:hover:border-0 [&>div]:[&>a]:transition-all [&>div]:[&>a]:duration-100 [&>div]:[&>a]:ease-in-out
    [&>div]:[&>p]:text-[var(--text-color-1)]  [&>div]:[&>h3]:text-[var(--text-color-2)] [&>div]:[&>h3]:text-xl [&>div]:[&>h3]:font-bold
    [&>div]:[&>div]:text-xs [&>div]:[&>div]:text-[var(--text-color-2)] [&>div]:[&>div]:border-b-2
-     sm:w-[85vw] sm:[&>div]:w-[40vw]
-   lg:w-[95vw] lg:[&>div]:w-[30vw]
-   xl:w-[15vw] xl:[&>div]:w-[15vw]">
+   sm:w-[86vw] sm:[&>div]:w-[40vw]
+   lg:w-[96vw] lg:[&>div]:w-[30vw]
+   xl:w-[18vw] xl:[&>div]:w-[17vw]">
     <div class="news-box"><div>OFFICIAL COMMUNICATION · FEB 2016</div>
         <h3>TerraGroup Reviews Security Arrangements for Regional Personnel</h3>
         
         <p>In light of changing regional conditions, TerraGroup continues to 
             coordinate with contracted security providers to support personnel safety 
             and maintain continuity across designated facilities.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a>  
     </div>
@@ -236,7 +236,7 @@
         <p>Due to the exceptional security situation affecting the region,
              TerraGroup advises all relevant parties that normal 
         operational schedules and communication channels may be disrupted</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -245,7 +245,7 @@
         <h3>TerraGroup Announces Strategic Investment in the Norvinsk Region</h3>
 
         <p>TerraGroup International today announced a long-term investment and cooperation agreement with regional representatives in Norvinsk, marking a significant expansion of the company's activities in northwestern Russia.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -254,7 +254,7 @@
         <h3>TerraGroup Expands Agricultural Biotechnology Research</h3>
 
         <p>TerraGroup Labs PLC announces expanded research initiatives focused on crop resilience, sustainable agriculture, and next-generation farming technologies.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -263,7 +263,7 @@
         <h3>USEC Supports Updated Facility Security Standards</h3>
 
         <p>Under its existing service agreement, USEC will assist with access management, emergency readiness, and the protection of designated TerraGroup facilities and personnel.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -272,7 +272,7 @@
         <h3>TerraGroup sign contrac with USEC PMC</h3>
 
         <p>Today, TerraGroup signs a contract with USEC. From that moment on, USEC operates as the corporation's private army, responsible for protecting its secrets and facilities.</p>
-        <a href="#" class="group flex gap-2">Read More
+        <a click href="#" class="group flex gap-2">Read More
          <span class="size-6 bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] dark:bg-[url(../images/read_more_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)] dark:group-hover:bg-[url(../images/read_more_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)]"></span>
         </a> 
     </div>
@@ -282,7 +282,7 @@
 
     </aside>
 
-    <footer class="xl:col-span-2 bg-[var(--footer-color)] text-[var(--footer-text)] p-3 mt-5 bottom-0 grid grid-cols-2 md:grid-cols-[2fr_1fr_2fr] gap-5 xl:grid-cols-[4fr_2fr_1fr_2fr] w-full">
+    <footer class="xl:col-span-2 mt-5 bg-[var(--footer-color)] text-[var(--footer-text)] p-3 bottom-0 grid grid-cols-2 md:grid-cols-[2fr_1fr_2fr] gap-5 xl:grid-cols-[4fr_2fr_1fr_2fr] w-full">
 
         <div class="hidden xl:block"><img src="../images/Terra_Group_logo_white.png" alt="Logo" class="max-h-40"></div>
 
@@ -305,7 +305,7 @@
         </div>
 
         <div class="-mt-4 -ml-1">
-            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:size-[1.5rem] md:[&>a]:[&>div]:size-[2rem] 2xl:[&>a]:[&>div]:size-[2.5rem]">                                               
+            <div class="flex gap-5 pt-5 pb-5 [&>a]:[&>div]:size-[1.5rem] md:[&>a]:[&>div]:size-[2rem] 2xl:[&>a]:[&>div]:size-[3rem]">                                               
           <a href="https://www.facebook.com" target="_blank"><div id="fb_w"></div></a>
            <a href="https://www.instagram.com" target="_blank"><div id="in_w"></div></a>
             <a href="https://www.x.com" target="_blank"><div id="x_w"></div></a>
@@ -319,5 +319,6 @@
         </div>
     </footer>
 </main>
+  <script src="../js/scrool-news.js"></script>
 </body>
 </html>
