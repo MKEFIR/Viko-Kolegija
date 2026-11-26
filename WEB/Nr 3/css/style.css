@@ -1,6 +1,4 @@
-@import "tailwindcss";
-
-/* ...your @theme blocks... */
+@import "tailwindcss"; @import "root.css";
 
 @layer base {
   html {
@@ -19,6 +17,11 @@
   }
   body > * {
     transition: filter 0.3s ease-in-out;
+  }
+
+  input {
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500;
+
   }
 }
 

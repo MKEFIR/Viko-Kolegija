@@ -10,7 +10,7 @@
   <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
 <body>
-    <header class="t-0 w-full sticky top-0 h-20 lg:h-22 flex justify-between shadow-2xl bg-[var(--body-color)] z-100">
+    <header class="mb-5 w-full sticky top-0 h-20 lg:h-22 flex justify-between shadow-2xl bg-[var(--body-color)] z-100">
      <div class="flex justify-between w-full mx-1 md:w-fit">
         <a href="../index.html"><div class="bg-[image:var(--tg-logo)] bg-cover bg-no-repeat h-12 w-40 m-2 lg:h-15 lg:w-50 xl:h-18 xl:w-60" ></div></a> <!-- Logotyp -->
       <nav class="">       
@@ -67,145 +67,143 @@
 <main class="grid grid-cols-[1fr] grid-rows-[1fr_auto_auto] xl:grid-cols-[5fr_1fr] xl:grid-rows-[1fr]">
     <content>
       <h2 id="central">Anketa</h2>
-<form class="w-full p-5 lg:col-span-3">
-  <div class="flex flex-wrap -mx-3">
-    <div class="w-full md:w-1/2 p-3">
-      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-first-name">First Name</label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-first-name" type="text" placeholder="Vardas" required>
-    </div>
-      <div class="w-full md:w-1/2 p-3">
-        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-last-name">Last Name</label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-last-name" type="text" placeholder="Pavarde" required>
-      </div>
-    <div class="w-full md:w-1/2 p-3">
-      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-phone">Phone</label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-phone" type="tel" placeholder="Telefonas" required>
-    </div>
-      <div class="w-full md:w-1/2 p-3">
-        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-email">Email</label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-email" type="email" placeholder="Email" required>
-      </div>
-          <div class="w-full md:w-1/2 p-3">
-      <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-age">Age</label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" id="grid-age" type="number" placeholder="Amžius" required>
-    </div>
-      <div class="w-full md:w-1/2 p-3">
-        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2" for="grid-sex">Sex</label>
-        <div class="flex items-center mb-4">
-      <input id="country-option-1" type="radio" name="countries" value="vyr" class="w-4 h-4 text-neutral-primary border-default-medium bg-neutral-secondary-medium rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none" checked>
-      <label for="country-option-1" class="select-none ms-2 text-sm font-medium text-heading">Vyras</label>
-      </div>
 
-  <div class="flex items-center mb-4">
-    <input id="country-option-2" type="radio" name="countries" value="mot" class="w-4 h-4 text-neutral-primary border-default-medium bg-neutral-secondary-medium rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none">
-    <label for="country-option-2" class="select-none ms-2 text-sm font-medium text-heading">Moteris</label>
+<form action="Anketa.html" method="post" class=" divide-y-1 divide-[var(--text-color-2)] [&>h3]:border-0 [&>h3]:my-2
+  w-full p-5 lg:col-span-3 [&>div]:[&>div]:[&>input]:bg-[var(--color-forms)] [&>div]:[&>div]:[&>input]:text-[var(--text-color-1)] [&>div]:[&>div]:[&>input]:px-4 [&>div]:[&>div]:[&>input]:py-3 [&>div]:[&>div]:[&>input]:w-full
+  [&>div]:[&>div]:[&>textarea]:bg-[var(--color-forms)] [&>div]:[&>div]:[&>textarea]:text-[var(--text-forms)] [&>div]:[&>div]:*:block [&>div]:[&>div]:[&>label]:uppercase [&>div]:[&>div]:[&>label]:text-xs [&>div]:[&>div]:[&>label]:font-bold [&>div]:[&>div]:[&>label]:tracking-wide
+  [&>div]:[&>div]:[&>input]:border [&>div]:[&>div]:[&>input]:border-[var(--text-forms)] [&>div]:[&>div]:[&>input]:appearance-none [&>div]:[&>div]:[&>input]:leading-tight [&>div]:[&>div]:[&>input]:rounded [&>div]:[&>div]:[&>label]:text-[var(--text-color-2)] [&>div]:[&>div]:[&>label]:mb-2
+  [&>div]:[&>div]:[&>select]:border [&>div]:[&>div]:[&>select]:border-[var(--text-forms)] [&>div]:[&>div]:[&>select]:appearance-none [&>div]:[&>div]:[&>select]:leading-tight [&>div]:[&>div]:[&>select]:rounded [&>div]:[&>div]:[&>select]:text-[var(--text-forms)] [&>div]:[&>div]:[&>select]:px-4 [&>div]:[&>div]:[&>select]:py-3 [&>div]:[&>div]:[&>select]:w-full">
+  <h3>Personal information</h3>
+  <div class="flex flex-wrap -mx-3 [&>div]:w-full [&>div]:md:w-1/2 [&>div]:p-3">
+        <div>
+          <label for="first-name">First Name</label>    
+          <input id="first-name" type="text" placeholder="Name"> 
+        </div>
+        <div>
+          <label for="last-name">Last Name</label>    
+          <input id="last-name" type="text" placeholder="Surname"> 
+        </div>
+        <div> 
+          <label for="age">Age</label>    
+          <input id="age" type="number"> 
+        </div>
+          <div>
+          <label for="sex">Sex</label>
+            <div>
+                <input type="radio" id="sex" name="sex" value="vyr"> Vyr.
+                <input type="radio" id="sex" name="sex" value="mot"> Mot.
+            </div>  
+          </div> 
+        </div>
   </div>
+  <h3>Contact information</h3>
+  <div class="flex flex-wrap -mx-3 [&>div]:w-full [&>div]:md:w-1/2 [&>div]:p-3">
+      <div>
+        <label for="email">Email</label>    
+        <input id="email" type="email" placeholder="Example@gmail.com"> 
+      </div>
+      <div>
+        <label for="number">Number</label>    
+          <input id="number" type="text" placeholder="(+370) 00000 000">
+      </div>
+      <div>
+        <label for="country">Country</label>    
+          <input id="country" type="text" placeholder="Country">
+      </div>
+          <div>
+        <label for="city">City</label>    
+          <input id="city" type="text" placeholder="City"> 
       </div>
   </div>
-    <div class="flex flex-wrap -mx-3 mb-6">
-      <div class="w-full p-3">
-        <label class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2">Subject</label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" type="text" placeholder="Tema" required>
-      </div>
-    </div>
-    <div class="flex flex-wrap -mx-3 mb-6">
-      <div class="w-full px-3">
-        <label for="message" class="block uppercase tracking-wide text-[var(--text-color-2)] text-xs font-bold mb-2">Your message</label>
-        <textarea id="message" rows="4" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" placeholder="Rašykite savo mintis čia..." required></textarea>
-      </div>
-    </div>
-    <div class="flex flex-wrap ml-10 mb-6 gap-3 [&>button]:transition-all [&>button]:duration-300 [&>button]:ease-in-out [&>button]:[&>p]:font-bold [&>button]:[&>p]:text-lg">
-      <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
-        <p>Send</p>
-        <span class="size-6 bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/send_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
-                             dark:bg-[url(../images/send_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
-      </button>
-      <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
-        <p>Reset</p>
-        <span class="size-6 bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/restart_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
-                             dark:bg-[url(../images/restart_alt_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
-      </button>
-    </div>
-</form>
-
-<form action="Anketa.html" method="post">
-   <h2 id="central">Anketa</h2>
-          <fieldset>
-            <legend>Asmenine informacija</legend>
-            <label for="vardas">Vardas:</label>
-            <input type="text" id="vardas" name="vardas" required="required" placeholder="Vardas..."><br><br>
-            <label for="pavarde">Pavardė:</label>
-            <input type="text" id="pavarde" name="pavarde" required="required" placeholder="Pavardė..."><br><br>
-            <label for="amzius">Amžius:</label>
-            <input type="number" id="amzius" name="amzius" style="width: 100px;" placeholder="Amžius..."><br><br>
-            <label for="lytis">Jūsų lytis:</label>
-            <input type="radio" id="vyras" name="lytis" value="vyras">Vyras
-            <input type="radio" id="moteris" name="lytis" value="moteris">Moteris<br><br>
-          </fieldset>
-          <fieldset>
-            <legend>Kontaktine informacija</legend>
-            <label for="email">El. paštas:</label>
-            <input type="email" id="email" name="email" required="required" maxlength="15" placeholder="El. paštas..."><br><br>
-            <label for="telefonas">Telefonas:</label>
-            <input type="tel" id="telefonas" name="telefonas" maxlength="15" placeholder="Telefonas..."><br><br>
-            <label for="Salis">Gyvenamoji šalis:</label>
-            <input type="text" id="Salis" name="Salis" maxlength="25" placeholder="Gyvenamoji šalis..."><br><br>
-          </fieldset>
-          <fieldset>
-            <legend>Pareigos ir skyrius</legend>
-            <label style="margin-left: 0px !important;" for="position">Pareigos, į kurias pretenduojate</label>
-        <select id="position" name="position" required>
+      <h3>Position and department</h3>
+  <div class="flex flex-wrap -mx-3 [&>div]:w-full [&>div]:lg:w-1/3 [&>div]:p-3">
+      <div>
+        <label for="position">Positions you are applying for</label>    
+       <select id="position" name="position" required>
             <option value="" disabled selected>Pasirinkite pareigas</option>
             <option value="research">Laboratorinių tyrimų asistentas</option>
             <option value="biotechnology">Biotechnologijų specialistas</option>
             <option value="security">Saugumo operacijų personalas</option>
             <option value="logistics">Logistikos koordinatorius</option>
             <option value="administration">Administracinis asistentas</option>
-            <option value="it">IT &amp; sistemų specialistas</option>
+            <option value="it">IT &amp; sistems specialist</option>
             <option value="internship">Stažuotė / Magistrantūros programa</option>
             <option value="other">Kita / Neįtraukta į sąrašą pareigos</option>
-            </select><br><br><br>
-
-            <label style="margin-left: 0px !important;" for="Preferred">Pageidaujamas padalinys</label><div>
-            <input type="radio" name="Preferred" value="1"><label>Moksliniai tyrimai ir plėtra</label>
-            <input type="radio" name="Preferred" value="2"><label>Žemės ūkio biotechnologijos</label>
-            <input type="radio" name="Preferred" value="3"><label>Saugumas ir rizikos valdymas</label>
-            <input type="radio" name="Preferred" value="4"><label>Logistika ir regioninės operacijos</label>
-            <input type="radio" name="Preferred" value="5"><label>Įmonės administravimas</label><br><br>
+        </select>
+      </div>
+      <div class="[&>div]:space-x-3 content-center">
+        <label for="department">Preferred department</label>
+            <div class="flex flex-cols">    
+              <input type="radio" id="department" name="department" value="1"><label>Research and development</label><br>
+              <input type="radio" id="department" name="department" value="2"><label>Agricultural biotechnology</label><br>
+              <input type="radio" id="department" name="department" value="3"><label>Security and risk management</label><br>
+              <input type="radio" id="department" name="department" value="4"><label>Logistics and regional operations</label><br>
+              <input type="radio" id="department" name="department" value="5"><label>Company administration</label>
+            </div>   
+      </div>
+      <div>
+        <label for="workplace">Preferred workplace</label>    
+          <input id="workplace" type="text" placeholder="Country, city, region">
+      </div>
+  </div>
+  <h3>Qualification</h3>
+  <div class="flex flex-wrap -mx-3 [&>div]:w-full [&>div]:md:w-1/2 [&>div]:p-3">
+      <div class="[&>div]:space-x-3">
+        <label for="Kvalifikacija">Relevant experience</label>   
+        <div >
+            <input type="radio" name="Kvalifikacija" value="0"><label>No professional experience</label><br>
+            <input type="radio" name="Kvalifikacija" value="1-3"><label>1-3 years</label><br>
+            <input type="radio" name="Kvalifikacija" value="4-7"><label>4-7 years</label><br>
+            <input type="radio" name="Kvalifikacija" value="8+"><label>8+ years</label>
             </div>
-            <label style="margin-left: 0px !important;" for="place">Pageidaujama darbo vieta</label>
-            <input style="margin-left: 0px !important;" type="text" id="place" name="place" required="required" placeholder="Miestas, šalis arba regioninė įstaiga..."><br><br>
-          </fieldset>
-                    <fieldset>
-            <legend>Kvalifikacija</legend>
-
-            <label for="Kvalifikacija">Atitinkama patirtis</label>
-            <div>
-            <input type="radio" name="Kvalifikacija" value="0"><label>Pradinis lygis / Profesinės patirties nėra</label>
-            <input type="radio" name="Kvalifikacija" value="1-3"><label>1-3 metai</label>
-            <input type="radio" name="Kvalifikacija" value="4-7"><label>4-7 metai</label>
-            <input type="radio" name="Kvalifikacija" value="8+"><label>8+ metai><br><br>
-            </div>
-            <label for="add-info">Įgūdžiai ir kvalifikacija</label>
-            <input style="margin-left: 0px !important;" type="text" id="add-info" name="add-info" required="required" placeholder="..."><br><br>
-          </fieldset>
-          <fieldset>
-            <legend>Papildoma informacija</legend>
-            <label for="vardas">Kodėl norite prisijungti prie „TerraGroup“?</label>
-            <textarea id="vardas" name="opinion" required="required" rows="3" placeholder="..."></textarea><br><br><br><br>
-            <label for="data">Galimybė pradėti</label>
-            <input type="date" id="data" name="data" required="required" placeholder="Pasirinkite datą..."><br><br>
-            <label for="vardas">Papildomos pastabos</label>
-            <textarea id="vardas" name="additional" required="required" rows="3" placeholder="..."></textarea><br><br>   
-          </fieldset>
-          <fieldset>
-            <legend>Deklaracija</legend>
-            <input type="checkbox" id="vesbutis" name="vesbutis" value="vesbutis" style="margin-left: 90px;">I confirm that the information provided is accurate to the best of my knowledge.<br><br>
-            <label for="atsiskaitymas"></label>
-            <input type="checkbox" id="vesbutis" name="vesbutis" value="vesbutis" style="margin-left: 90px;">I acknowledge the applicant privacy notice and consent to the processing of my application.<br><br>
-            <label for="atsiskaitymas"></label>  
-          </fieldset>
-            <div id="submit-btn"><input type="submit" value="Registruotis"> <input type="reset" value="Išvalyti"></div>
+      </div>
+      <div>
+        <label for="add-info">Skills and qualifications</label>
+        <input type="text" id="add-info" name="add-info" required placeholder="...">
+      </div>
+  </div>
+    <h3>Additional information</h3>
+  <div class="flex flex-wrap -mx-3 [&>div]:w-full [&>div]:p-3 [&>div]:*:w-full">
+      <div class="md:w-1/2">
+        <label for="opinion">Why do you want to join TerraGroup?</label>    
+         <textarea id="opinion" name="opinion" required="required" rows="3" placeholder="..."></textarea>
+      </div>
+      <div class="md:w-1/2">
+        <label for="date">When you can start?</label>    
+          <input type="date" id="data" name="data" required="required" placeholder="Pasirinkite datą...">
+      </div>
+      <div>
+        <label for="additional">Additional notes</label>    
+          <textarea id="additional" name="additional" required="required" rows="3" placeholder="..."></textarea>
+      </div>
+  </div>
+  <div>
+  <div class="[&>div]:[&>label]:text-md mt-3">
+      <div class="flex items-center mb-4">
+      <input checked id="checkbox-1" type="checkbox" value="terms_and_conditions" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" >
+      <label for="checkbox-1" class="ms-2 text-sm font-medium text-heading select-none">I agree to the <a href="#" class="text-fg-brand hover:underline">terms and conditions</a>.</label>
+      </div>
+      <div class="flex items-center mb-4">
+      <input checked id="checkbox-2" type="checkbox" value="accurate_information" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" >
+      <label for="checkbox-2" class="ms-2 text-sm font-medium text-heading select-none">I confirm that the information provided is accurate to the best of my knowledge.</label>
+      </div>
+      <div class="flex items-center mb-4">
+      <input checked id="checkbox-3" type="checkbox" value="aggrement_private" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" >
+      <label for="checkbox-3" class="ms-2 text-sm font-medium text-heading select-none">I acknowledge the applicant privacy notice and consent to the processing of my application.</label>
+  </div></div>
+  <span>
+    <div class="flex flex-wrap ml-10 mb-6 gap-3 [&>button]:transition-all [&>button]:duration-300 [&>button]:ease-in-out [&>button]:[&>p]:font-bold [&>button]:[&>p]:text-lg hover:[&>button]:cursor-pointer">
+      <button type="submit" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        <p>Send</p>
+        <span class="size-6 bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/send_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
+                             dark:bg-[url(../images/send_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/send_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
+      </button>
+      <button type="reset" class="group flex gap-2 text-[var(--text-color-5)] bg-[var(--text-color-2)] box-border border-2 border-[var(--text-color-2)] hover:bg-[var(--body-color)] hover:text-[var(--text-color-1)] rounded-full focus:ring-4 focus:ring-brand-medium shadow-xs font-xl leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        <p>Reset</p>
+        <span class="size-6 bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:bg-[url(../images/restart_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg)]
+                             dark:bg-[url(../images/restart_alt_24dp_05111B_FILL0_wght400_GRAD0_opsz24.svg)] group-hover:dark:bg-[url(../images/restart_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg)] bg-contain bg-center bg-no-repeat"></span>
+      </button>
+    </div></span></div>
         </form> 
            </content>
            

@@ -23,7 +23,8 @@
 --text-bright-color: #2C4883;
 --text-dark-color: whitesmoke;
 --text-dark-hover: #2C4883;
-
+--color-forms: #e5e7eb;
+--text-forms: #8d949f;
 /*Dól*/
 --footer-color: #0C1D2D;
 --footer-text: whitesmoke;
@@ -83,10 +84,12 @@
 --news-color: #0C1D2D;
     --news-border-bottom: #1a2d57;
     --news-border-top: #2C4883;
---aside-color: rgba(24, 38, 51, 0.2);
+--aside-color: #18263333;
 --text-bright-color: whitesmoke;
 --text-dark-color: black;
 --text-dark-hover: #2C4883;
+--color-forms: #2e3d4b33;
+--text-forms: #8d949f;
 
 /*Dól*/
 --footer-color: #0C1D2D;
