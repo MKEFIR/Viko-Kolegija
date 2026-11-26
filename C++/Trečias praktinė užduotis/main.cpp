@@ -206,9 +206,9 @@ double suma=0, result=0;
         cout <<"----------------------------";
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void suma_konk_Function (int n, const Uzsakymas uzs[], int m, const string Kategorijos[]){
-double suma=0, result=0;
-int kat;
+void suma_konk_Function (int n, const Uzsakymas uzs[], int m, const string Kategorijos[]) {
+        double suma=0, result=0;
+        int kat;
         back:
         cout << "Irasykite Kokia kategorija norite apozvelgti\n";
         for (int i = 1; i < m; i++) {
@@ -229,16 +229,14 @@ int kat;
                         result += 0.9*(stod(uzs[i].cena) * stod(uzs[i].ilosc));
                     }else {
                         result += (stod(uzs[i].cena) * stod(uzs[i].ilosc));
-        }   }   }   }
-        cout<<"---Kategorijos uzsakymo sumas---"<<endl;
-        cout <<"| Kategorija: "<<Kategorijos[kat]<<endl;
-        if (suma-result == 0) {
-        cout << "| Moketina suma: " << suma << endl;
-        } else {
+                    }   }   }   }
+        cout << "---Kategorijos uzsakymo sumas---"<<endl;
+        cout << "| Kategorija: "<<Kategorijos[kat]<<endl;
         cout << "| Suma lygu: " << suma << endl;
         cout << "| Nuakaida: " << suma-result << endl;
         cout << "| Moketina suma: " << result << endl;
-    }   cout <<"-------------------------------";}
+        cout <<"-------------------------------";
+    }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void parodyti_Function(int n, int l, int ll, int lll, const Uzsakymas uzs[]) {
 
@@ -281,6 +279,7 @@ void isaugoti_Function (int n, int l, int ll, int lll, const Uzsakymas uzs[]){
                 perror("Reason");
                 return;
             }
+        cout << "failas issaugotas i ataskaita.txt\n";
 
             fout << fixed << setprecision(2);
 
